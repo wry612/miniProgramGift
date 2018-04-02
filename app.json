@@ -1,12 +1,51 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/packet/packet",
+    "pages/takeGoods/takeGoods",
+    "pages/user/user",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "莱斯 礼尚",
     "navigationBarTextStyle":"black"
-  }
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#ff3300",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "礼品",
+        "iconPath":"image/icon_index.png",
+        "selectedIconPath":"image/icon_index_hl.png"
+      },
+      {
+        "pagePath": "pages/packet/packet",
+        "text": "红包",
+        "iconPath": "image/icon_packet.png",
+        "selectedIconPath": "image/icon_packet_hl.png"
+      },
+      {
+        "pagePath": "pages/takeGoods/takeGoods",
+        "text": "提货",
+        "iconPath": "image/icon_goods.png",
+        "selectedIconPath": "image/icon_goods_hl.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我",
+        "iconPath": "image/icon_user.png",
+        "selectedIconPath": "image/icon_user_hl.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug":true
 }
