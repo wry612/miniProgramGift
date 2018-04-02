@@ -4,6 +4,7 @@ const app = getApp()
 
 Page({
   data: {
+    typeList: [{ "typeName": '普洱茶', "commodityList": [{ "name": "茶", "number": "256元/罐", "money": "8元/克" }, { "name": "茶", "number": "256元/罐", "money": "8元/克" }, { "name": "茶", "number": "256元/罐", "money": "8元/克" }] }, { "typeName": '普洱茶', "commodityList": [{ "name": "茶", "number": "256元/罐", "money": "8元/克" }, { "name": "茶", "number": "256元/罐", "money": "8元/克" }, { "name": "茶", "number": "256元/罐", "money": "8元/克" }] }, { "typeName": '普洱茶', "commodityList": [{ "name": "茶", "number": "256元/罐", "money": "8元/克" }, { "name": "茶", "number": "256元/罐", "money": "8元/克" }, { "name": "茶", "number": "256元/罐", "money": "8元/克" }]}],
     background: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
     indicatorDots: true,
     vertical: false,

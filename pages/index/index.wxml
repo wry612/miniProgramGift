@@ -8,5 +8,23 @@
       </swiper-item>
     </block>
   </swiper>
+  <view>
+    <navigator url=''>查看所有活动</navigator>
+  </view>
+  <view>
+    <view wx:for="{{typeList}}">
+      <view>
+        <text>{{item.typeName}}</text>
+        <navigator>查看全部</navigator>
+      </view>
+      <view wx:for="{{item.commodityList}}" wx:for-item="commodity">
+        <view></view>
+        <view>
+        <view>{{commodity.name}}</view>
+        <view><text>{{commodity.number}}</text><text>{{commodity.money}}</text></view>
+        </view>
+      </view>
+    </view>
+  </view>
   <template is="foot" />
 </view>
