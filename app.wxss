@@ -8,6 +8,14 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+.text-right{
+  text-align: right;
+}
+.float-right{
+  float:right;
+}
+
+/**foot.template**/
 .page-foot{
   margin: 100rpx 0 30rpx 0;
   text-align: center;

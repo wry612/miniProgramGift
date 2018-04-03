@@ -9,3 +9,10 @@ swiper{
   height: 300rpx;
   background: #ccc;
 }
+.activity-title{
+  padding:20rpx 40rpx;
+  width: 670rpx;
+  color:#ff0000;
+  font-size:13pt;
+  text-align: right;
+}

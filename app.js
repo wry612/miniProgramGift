@@ -1,17 +1,43 @@
 //app.js
+var util = require("utils/util.js");
+var api = require("utils/api.js");
 App({
   onLaunch: function () {
     // 展示本地存储能力
-    var logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
+    var sessionKey = wx.getStorageSync('session_key') || '';
+    if (sessionKey == "") {
+      api.api.login(function () {
+        api.dataRequest({
+          url: 'http://wangruoyu.developer.jsdttec.com/test/pay/buyCommodityForSmallProgram', //仅为示例，并非真实的接口地址
+          data: {
+            commodityId: 11,
+            quantity: 1,
+            quantityType: 1,
+            activityId: 0,
+            brokerId: 0,
+            smallProgrammeLoginCode: sessionKey
+          },
+          success: function (response) {
+            var data = response.data;
+            wx.requestPayment({
+              'timeStamp': data.timeStamp,
+              'nonceStr': data.nonceStr,
+              'package': data.package,
+              'signType': 'MD5',
+              'paySign': data.paySign,
+              'success': function (r) {
+                wx.showToast({
+                  title: '支付成功',
+                })
+              },
+              'fail': function (r) {
+              }
+            })
+          }
+        })
+      });
+    }
 
-    // 登录
-    wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-      }
-    })
     // 获取用户信息
     wx.getSetting({
       success: res => {
@@ -34,6 +60,7 @@ App({
     })
   },
   globalData: {
+    api: api,
     userInfo: null
   }
 })

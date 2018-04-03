@@ -8,8 +8,8 @@
       </swiper-item>
     </block>
   </swiper>
-  <view>
-    <navigator url=''>查看所有活动</navigator>
+  <view class='activity-title'>
+    <navigator url=''>查看所有活动></navigator>
   </view>
   <view>
     <view wx:for="{{typeList}}">
