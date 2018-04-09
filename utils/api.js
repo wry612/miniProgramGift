@@ -75,7 +75,10 @@ var apiFunction = {
   }
 }
 
-
+module.exports = {
+  config: config,
+  apiFunction: apiFunction
+}
 
 
 
