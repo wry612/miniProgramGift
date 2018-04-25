@@ -1,0 +1,41 @@
+page{
+  background: #e6e6e6;
+}
+.page-nav{
+  position: fixed;
+  left:0;
+  top:0;
+  width: 100%;
+  height: 88rpx;
+  font-size:11pt;
+  text-align: center;
+  background: #fcfcfc;
+  border-top:1rpx solid #f3f3f3;
+}
+.nav-item{
+  display: inline-block;
+  width: 120rpx;
+  height:82rpx;
+  margin:0 30rpx;
+  line-height: 82rpx;
+}
+.nav-active{
+  color:#bf9a5c;
+  border-bottom:6rpx solid #bf9a5c;
+}
+.nav-record{
+  position: absolute;
+  right:30rpx;
+  top:22rpx;
+  height: 42rpx;
+  padding:0 20rpx;
+  color:#666666;
+  font-size:9pt;
+  line-height: 42rpx;
+  border:1px solid #f3f3f3;
+  border-radius:24rpx;
+}
+.swiper{
+  width: 100%;
+  height: 1106rpx;
+}

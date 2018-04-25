@@ -1,30 +1,27 @@
 <!--index.wxml-->
-<import src="../../../common/foot.wxml" />
-<view class="container">
-  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-    <block wx:for="{{background}}" wx:key="*this">
-      <swiper-item>
-        <view class="swiper-item {{item}}">A</view>
-      </swiper-item>
-    </block>
-  </swiper>
-  <view class='activity-title'>
-    <navigator url=''>查看所有活动></navigator>
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{background}}" wx:key="*this">
+    <swiper-item>
+      <view class="swiper-item {{item}}">A</view>
+    </swiper-item>
+  </block>
+</swiper>
+<view class='activity-title'>
+  <navigator url=''>查看所有活动</navigator>
+</view>
+<view class='section-wrap' wx:for="{{typeList}}">
+  <view class='section-title'>
+    <text>{{item.typeName}}</text>
+    <navigator class='section-more'>查看全部</navigator>
   </view>
-  <view>
-    <view wx:for="{{typeList}}">
-      <view>
-        <text>{{item.typeName}}</text>
-        <navigator>查看全部</navigator>
-      </view>
-      <view wx:for="{{item.commodityList}}" wx:for-item="commodity">
-        <view></view>
-        <view>
-        <view>{{commodity.name}}</view>
-        <view><text>{{commodity.number}}</text><text>{{commodity.money}}</text></view>
-        </view>
+  <view class='section-list'>
+    <view class='section-box' wx:for="{{item.commodityList}}" wx:for-item="commodity">
+      <view class='box-img'></view>
+      <view class='box-title'>{{commodity.name}}</view>
+      <view class='box-desc'>
+        <text class='number'>{{commodity.number}}</text>
+        <text class='money'>{{commodity.money}}</text>
       </view>
     </view>
   </view>
-  <template is="foot" />
 </view>

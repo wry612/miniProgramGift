@@ -1,4 +1,11 @@
 /**app.wxss**/
+view,text,navigator{
+  margin:0;
+  padding:0;
+  color:#333;
+  letter-spacing: 2rpx;
+  line-height: 1;
+}
 .container {
   height: 100%;
   display: flex;
@@ -14,15 +21,25 @@
 .float-right{
   float:right;
 }
+navigator{
+  color:#bf9a5c;
+}
 
 /**foot.template**/
 .page-foot{
-  margin: 100rpx 0 30rpx 0;
+  display: flex;
+  justify-content: center;
+  margin: 100rpx 0 20rpx 0;
   text-align: center;
-  color: #1aad19;
-  font-size: 0;
+  font-size: 9pt;
 }
-.icon-foot{
-  width: 152rpx;
-  height: 23rpx;
+.foot-text{
+  margin:0 30rpx;
+  color:#333;
+}
+.copyright{
+  margin: 20rpx 0;
+  text-align: center;
+  color: #999;
+  font-size: 9pt;
 }

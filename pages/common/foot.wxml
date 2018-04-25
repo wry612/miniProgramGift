@@ -1,8 +1,8 @@
 <template name="foot">
-  <view>
-    <navigator class="page-foot" openType="switchTab" url="/page/component/index" hover-class="none">关于礼尚</navigator>
-    <text>|</text>
-    <navigator class="page-foot" openType="switchTab" url="/page/component/index" hover-class="none">常见困难</navigator>
+  <view class='page-foot'>
+    <navigator openType="switchTab" url="/page/component/index" hover-class="none">关于礼尚</navigator>
+    <text class="foot-text">|</text>
+    <navigator openType="switchTab" url="/page/component/index" hover-class="none">常见困难</navigator>
   </view>
-  <view>版权所有 ©2018 lishang</view>
+  <view class='copyright'>版权所有 ©2018 lishang</view>
 </template>

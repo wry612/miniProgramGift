@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-   
+    current:0
   },
   onLoad: function () {
     

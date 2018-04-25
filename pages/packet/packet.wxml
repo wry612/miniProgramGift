@@ -1,1 +1,14 @@
-<view></view>
+<view class='page-nav'>
+  <view class="nav-item {{current==0?'nav-active':''}}">拼手气</view>
+  <view class="nav-item {{current==1?'nav-active':''}}">普通</view>
+  <navigator class='nav-record'>礼包记录</navigator>
+</view>
+
+<view class="swiper">
+  <swiper>
+      <swiper-item>
+      </swiper-item>
+      <swiper-item>
+      </swiper-item>
+  </swiper>
+</view>

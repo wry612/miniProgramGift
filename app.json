@@ -1,7 +1,7 @@
 {
   "pages":[
+    "pages/packet/packet",    
     "pages/index/index",
-    "pages/packet/packet",
     "pages/takeGoods/takeGoods",
     "pages/user/user",
     "pages/logs/logs"
@@ -9,12 +9,12 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "莱斯 礼尚",
+    "navigationBarTitleText": "莱斯礼尚",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
-    "color": "#333",
-    "selectedColor": "#ff3300",
+    "color": "#999999",
+    "selectedColor": "#bf9a5c",
     "backgroundColor": "#fff",
     "list": [
       {
@@ -25,7 +25,7 @@
       },
       {
         "pagePath": "pages/packet/packet",
-        "text": "红包",
+        "text": "礼包",
         "iconPath": "image/icon_packet.png",
         "selectedIconPath": "image/icon_packet_hl.png"
       },
