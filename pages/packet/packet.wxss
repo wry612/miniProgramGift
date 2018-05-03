@@ -11,6 +11,7 @@ page{
   text-align: center;
   background: #fcfcfc;
   border-top:1rpx solid #f3f3f3;
+  z-index: 1;
 }
 .nav-item{
   display: inline-block;
@@ -36,6 +37,110 @@ page{
   border-radius:24rpx;
 }
 .swiper{
+  position: relative;
   width: 100%;
-  height: 1106rpx;
+  height: 1000rpx;
+  background: url(http://192.168.7.6:8080/static/xccImage/packet-bg.png) center bottom no-repeat;
+  background-size:100%; 
+}
+swiper{
+  width: 670rpx;
+  height:1000rpx;
+  margin:110rpx 40rpx 0;
+}
+swiper-item{
+  padding:40rpx;
+  background: #fff;
+  border-radius:10rpx;
+  box-sizing: border-box;
+}
+.packet-top{
+  display: flex;
+  justify-content: space-between;
+}
+.packet-img{
+  float: left;
+  width: 120rpx;
+  height: 120rpx;
+  margin-right:15rpx;
+  background: #f3f3f3;
+}
+.packet-name{
+  width: 300rpx;
+  font-size:11pt;
+  font-weight: bold;
+  line-height: 60rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.packet-hold{
+  margin-top:24rpx;
+  font-size:10pt;
+  line-height: 36rpx;
+}
+.select{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100rpx;
+  height: 40rpx;
+  font-size:10pt;
+}
+.input-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80rpx;
+  margin-top:40rpx;  
+  padding:0 10rpx;
+  font-size:11pt;
+  background: #fafafa;  
+}
+.input-inner{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 80rpx;  
+}
+.weui-input{
+  width: 250rpx;
+  height: 60rpx;
+  padding:0 10rpx;
+  font-size:10pt;
+  text-align: right;
+}
+.input-tip{
+  margin:20rpx 0;
+  color:#ccc;
+  font-size: 10pt;
+}
+textarea{
+  height: 140rpx;
+  padding:10rpx;
+  margin-top:40rpx;
+  font-size:11pt;
+  line-height: 1.5;
+  background: #fafafa;
+}
+.packet-floor{
+  position: absolute;
+  bottom:0;
+  left:0;
+  width: 100%;
+  height: 300rpx;
+}
+.send-packet{
+  position: absolute;
+  left:50%;
+  bottom:60rpx;
+  width: 180rpx;
+  height:180rpx;
+  margin-left:-90rpx;
+  color:#fee193;
+  font-size:13pt;
+  text-align: center;
+  line-height: 180rpx;
+  background: #bf9a5c;
+  border-radius: 100%;
 }

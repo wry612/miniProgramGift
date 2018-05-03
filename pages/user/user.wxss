@@ -1,0 +1,48 @@
+page{
+  background: #f3f3f3;
+}
+.user-section{
+  padding:80rpx 0 70rpx;
+  text-align: center;
+  background: #fff;
+  border-top:1rpx solid #f3f3f3;
+}
+.nc{
+  margin-top:30rpx;
+  color:#bf9a5c;
+  font-size:11pt;
+}
+.my-record{
+  padding:15rpx 30rpx;
+  color:#666;
+  font-size:12pt;
+  background: #fff;
+  border-top:1rpx solid #f3f3f3;
+  border-bottom:1rpx solid #f3f3f3;
+}
+.nav-wrap{
+  display: flex;
+  height: 140rpx;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  background: #fff;
+}
+text{
+  color:#666;
+}
+.text{
+  margin-top:8rpx;
+  font-size: 9pt;  
+}
+.address{
+  display: flex;
+  height: 100rpx;
+  padding:0 30rpx;
+  margin-top:20rpx;
+  align-items: center;
+  justify-content: space-between;
+  color:#666;
+  font-size:12pt;
+  background: #fff;
+}

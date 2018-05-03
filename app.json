@@ -1,9 +1,10 @@
 {
   "pages":[
-    "pages/packet/packet",    
+    "pages/packet/packet",
+    
+    "pages/user/user",
     "pages/index/index",
     "pages/takeGoods/takeGoods",
-    "pages/user/user",
     "pages/logs/logs"
   ],
   "window":{

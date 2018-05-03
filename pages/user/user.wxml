@@ -1,1 +1,27 @@
-<view></view>
+<view class="user-section">
+  <view><image src='http://192.168.7.6:8080/static/xccImage/user-face.png' style="width:120rpx;height:120rpx;"></image></view>
+  <view class="nc">用户昵称</view>
+</view>
+<view class='my-record'>我的记录</view>
+<view class='nav-wrap'>
+  <navigator>
+    <view><image src='http://192.168.7.6:8080/static/xccImage/icon-packet.png' style='width:52rpx;height:52rpx;'></image></view>
+    <view class='text'><text>礼包</text></view>
+  </navigator>
+  <navigator>
+    <view><image src='http://192.168.7.6:8080/static/xccImage/icon-cart.png' style='width:52rpx;height:52rpx;'></image></view>
+    <view class='text'><text>购买</text></view>
+  </navigator>
+  <navigator>
+    <view><image src='http://192.168.7.6:8080/static/xccImage/icon-trunk.png' style='width:52rpx;height:52rpx;'></image></view>
+    <view class='text'><text>提货</text></view>
+  </navigator>
+  <navigator>
+    <view><image src='http://192.168.7.6:8080/static/xccImage/icon-discount.png' style='width:52rpx;height:52rpx;'></image></view>
+    <view class='text'><text>活动</text></view>
+  </navigator>
+</view>
+<navigator class='address'>
+<text>地址管理</text>
+<image src='http://wangruoyu.developer.jsdttec.com/static/xccImage/big-arrow.png' style='width:21rpx;height:40rpx;'></image>
+</navigator>

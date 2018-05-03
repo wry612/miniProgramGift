@@ -1,1 +1,74 @@
 /* pages/takeGoods/takeGooods.wxss */
+page{
+  height: 100%;
+  background: #f3f3f3;
+}
+.page-nav{
+  position: fixed;
+  left:0;
+  top:0;
+  width: 100%;
+  height: 88rpx;
+  font-size:11pt;
+  text-align: center;
+  background: #fcfcfc;
+  border-top:1rpx solid #f3f3f3;
+  z-index: 1;
+}
+.nav-item{
+  display: inline-block;
+  width: 120rpx;
+  height:82rpx;
+  margin:0 30rpx;
+  line-height: 82rpx;
+}
+.nav-active{
+  color:#bf9a5c;
+  border-bottom:6rpx solid #bf9a5c;
+}
+.deliveryed{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 116rpx;
+  padding:0 40rpx 0 60rpx;
+  background: #f7f7f7;
+}
+.deliver{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size:12pt;
+}
+swiper{
+  width: 100%;
+  height: 100%;
+  padding-top:90rpx;
+}
+.goods-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 122rpx;
+  padding:40rpx 30rpx;
+  font-size:12pt;
+  background: #fff;
+  border-top:1rpx solid #f3f3f3;
+}
+.item{
+  display: flex;
+  width: 490rpx;
+  height: 45rpx;
+  align-items: center;
+  justify-content: space-between;
+}
+.item:first-child{
+  margin-bottom:30rpx;
+}
+.small{
+  font-size:10pt;
+}
+.small-tip{
+  color:#999999;
+  font-size:9pt;
+}

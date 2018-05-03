@@ -1,2 +1,65 @@
 <!--pages/takeGoods/takeGooods.wxml-->
-<text>pages/takeGoods/takeGooods.wxml</text>
+<view class='page-nav'>
+  <view class="nav-item {{current==0?'nav-active':''}}">礼品</view>
+  <view class="nav-item {{current==1?'nav-active':''}}">礼券</view>
+</view>
+<swiper>
+  <swiper-item>
+    <scroll-view scroll-y="true" style="height: 100%;" bindscrolltoupper="upper" bindscrolltolower="lower">
+      <view class="deliveryed">
+        <view class='deliver'>
+          <image src='http://wangruoyu.developer.jsdttec.com/static/xccImage/icon-goods.png' style='width:76rpx;height:75rpx;margin-right:40rpx;'></image>
+          <text>已提货礼品</text>
+        </view>
+        <image src='http://wangruoyu.developer.jsdttec.com/static/xccImage/small-arrow.png' style='width:12rpx;height:20rpx;'></image>
+      </view>
+      <navigator class='goods-item'>
+        <image src='http://wangruoyu.developer.jsdttec.com/static/xccImage/icon-goods.png' style='width:120rpx;height:120rpx;'></image>
+        <view>
+          <view class='item'>
+            <text>小罐茶XXX</text>
+            <text class='small'>50克/罐</text>
+            <text class='small'>可提：0罐</text>
+          </view>
+          <view class='item'>
+            <text>数量:17克</text>
+            <text>价值:37.5元</text>
+          </view>
+        </view>
+        <image src='http://wangruoyu.developer.jsdttec.com/static/xccImage/big-arrow.png' style='width:21rpx;height:40rpx;'></image>
+      </navigator>
+      <navigator class='goods-item'>
+        <image src='http://wangruoyu.developer.jsdttec.com/static/xccImage/icon-goods.png' style='width:120rpx;height:120rpx;'></image>
+        <view>
+          <view class='item'>
+            <text>小罐茶XXX</text>
+            <text class='small'>50克/罐</text>
+            <text class='small'>可提：0罐</text>
+          </view>
+          <view class='item'>
+            <text>数量:17克</text>
+            <text>价值:37.5元</text>
+          </view>
+        </view>
+        <image src='http://wangruoyu.developer.jsdttec.com/static/xccImage/big-arrow.png' style='width:21rpx;height:40rpx;'></image>
+      </navigator>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item>
+    <scroll-view scroll-y="true" style="height: 100%;" bindscrolltoupper="upper" bindscrolltolower="lower">
+      <navigator class='goods-item'>
+        <image src='http://wangruoyu.developer.jsdttec.com/static/xccImage/icon-goods.png' style='width:120rpx;height:120rpx;'></image>
+        <view>
+          <view class='item'>
+            <text>多士炉</text>
+            <text class='small'>待领取</text>
+          </view>
+          <view class='item'>
+            <text class='small-tip'>2017.11.07-2018.02.01</text>
+          </view>
+        </view>
+        <image src='http://wangruoyu.developer.jsdttec.com/static/xccImage/big-arrow.png' style='width:21rpx;height:40rpx;'></image>
+      </navigator>
+    </scroll-view>
+  </swiper-item>
+</swiper>

@@ -18,13 +18,18 @@ view,text,navigator{
 .text-right{
   text-align: right;
 }
+.float-left{
+  float:left;
+}
 .float-right{
   float:right;
 }
 navigator{
   color:#bf9a5c;
 }
-
+.orange{
+  color:#ff9933;
+}
 /**foot.template**/
 .page-foot{
   display: flex;

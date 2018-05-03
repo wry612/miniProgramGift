@@ -6,9 +6,93 @@
 
 <view class="swiper">
   <swiper>
-      <swiper-item>
-      </swiper-item>
-      <swiper-item>
-      </swiper-item>
+    <swiper-item>
+      <view class='packet-top'>
+        <view>
+          <image src='' class='packet-img'></image>
+          <view class='float-left'>
+            <view class='packet-name'>中茶西夏墅</view>
+            <view class='packet-hold'>当前持有256克</view>
+          </view>
+        </view>
+        <view>
+          <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class='select'>
+              <text>切换</text>
+              <image src='http://192.168.7.6:8080/static/xccImage/right-arrow.png' style="width:40rpx;height:40rpx;"></image>
+            </view>
+          </picker>
+        </view>
+      </view>
+      <view>
+        <view class='input-box'>
+          <text>总量</text>
+          <view class='input-inner'>
+            <input class="weui-input" type="number" placeholder="请填写数量" />
+            <text>克</text>
+          </view>
+        </view>
+        <view class='input-tip'>
+          价值约
+          <text class='orange'>5元</text>
+        </view>
+        <view class='input-box'>
+          <text>礼包个数</text>
+          <view class='input-inner'>
+            <input class="weui-input" type="number" placeholder="请填写个数" />
+            <text>个</text>
+          </view>
+        </view>
+        <view class='input-tip'>每人可领一个，数量随机且每人不超过200克</view>
+        <view>
+          <textarea bindblur="bindTextAreaBlur" placeholder='好茶需要与朋友共享' />
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class='packet-top'>
+        <view>
+          <image src='' class='packet-img'></image>
+          <view class='float-left'>
+            <view class='packet-name'>中茶西夏墅</view>
+            <view class='packet-hold'>当前持有256克</view>
+          </view>
+        </view>
+        <view>
+          <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class='select'>
+              <text>切换</text>
+              <image src='http://192.168.7.6:8080/static/xccImage/right-arrow.png' style="width:40rpx;height:40rpx;"></image>
+            </view>
+          </picker>
+        </view>
+      </view>
+      <view>
+        <view class='input-box'>
+          <text>单个数量</text>
+          <view class='input-inner'>
+            <input class="weui-input" type="number" placeholder="请填写数量" />
+            <text>克</text>
+          </view>
+        </view>
+        <view class='input-tip'>
+          价值约
+          <text class='orange'>5元</text>
+        </view>
+        <view class='input-box'>
+          <text>礼包个数</text>
+          <view class='input-inner'>
+            <input class="weui-input" type="number" placeholder="请填写个数" />
+            <text>个</text>
+          </view>
+        </view>
+        <view class='input-tip'>每人可领一个，数量随机且每人不超过200克</view>
+        <view>
+          <textarea bindblur="bindTextAreaBlur" placeholder='好茶需要与朋友共享' />
+        </view>
+      </view>
+    </swiper-item>
   </swiper>
+  <image src="http://192.168.7.6:8080/static/xccImage/packet-floor.png" class='packet-floor'></image>
+  <button class='send-packet' open-type="share" bindtap='sendPacket'>发礼包</button>
 </view>
