@@ -16,16 +16,16 @@
 <view class='section-wrap' wx:for="{{typeList}}">
   <view class='section-title'>
     <text>{{item.typeName}}</text>
-    <navigator class='section-more'>查看全部</navigator>
+    <navigator url='../commodity/commodity' class='section-more'>查看全部</navigator>
   </view>
   <view class='section-list'>
-    <view class='section-box' wx:for="{{item.commodityList}}" wx:for-item="commodity">
+    <navigator url='../commodityDetail/commodityDetail' class='section-box' wx:for="{{item.commodityList}}" wx:for-item="commodity">
       <view class='box-img'></view>
       <view class='box-title'>{{commodity.name}}</view>
       <view class='box-desc'>
         <text class='number'>{{commodity.number}}</text>
         <text class='money'>{{commodity.money}}</text>
       </view>
-    </view>
+    </navigator>
   </view>
 </view>

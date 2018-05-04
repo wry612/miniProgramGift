@@ -1,17 +1,17 @@
 {
-  "pages":[
-    "pages/packet/packet",
-    
-    "pages/user/user",
+  "pages": [
+    "pages/commodityDetail/commodityDetail",
     "pages/index/index",
+    "pages/packet/packet",
     "pages/takeGoods/takeGoods",
-    "pages/logs/logs"
+    "pages/user/user",
+    "pages/commodity/commodity"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "莱斯礼尚",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#999999",
@@ -21,8 +21,8 @@
       {
         "pagePath": "pages/index/index",
         "text": "礼品",
-        "iconPath":"image/icon_index.png",
-        "selectedIconPath":"image/icon_index_hl.png"
+        "iconPath": "image/icon_index.png",
+        "selectedIconPath": "image/icon_index_hl.png"
       },
       {
         "pagePath": "pages/packet/packet",
@@ -48,5 +48,5 @@
     "request": 10000,
     "downloadFile": 10000
   },
-  "debug":true
+  "debug": true
 }
