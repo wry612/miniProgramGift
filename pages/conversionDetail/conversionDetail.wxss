@@ -1,0 +1,58 @@
+/* pages/conversionDetail/conversionDetail.wxss */
+page{
+  background: #f3f3f3;
+}
+.section{
+  position: relative;
+  padding:30rpx;
+  margin:30rpx;
+  background: #fff;
+  border-radius:5rpx;
+}
+.section-title{
+  color:#999;
+  font-size:9pt;
+  line-height: 76rpx;
+}
+.activity-box{
+  display: flex;
+  justify-content: flex-start;
+}
+.activity-right{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.activity-name{
+  font-size:12pt;
+  line-height: 45rpx;
+}
+.activity-desc{
+  color:#ff9933;
+  font-size:11pt;
+  line-height: 45rpx;
+}
+.activity-type{
+  color:#999;
+  font-size:9pt;
+  line-height: 45rpx;
+}
+.activity-type text{
+  color:#666;
+  font-size:11pt;
+}
+.bottom-wrap{
+  position: absolute;
+  bottom:-80rpx;
+  left:30rpx;
+  width: 630rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color:#bf9a5c;
+  font-size:9pt;
+  background: #fff3d4;
+  z-index:1;
+  box-shadow: 0 10rpx 9rpx rgba(210,210,210,0.2) inset,0 9rpx 9.6rpx 0.4rpx rgba(179,156,132,0.2);
+}

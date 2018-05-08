@@ -1,0 +1,56 @@
+<!--pages/activityDetail/activityDetail.wxml-->
+<view class='section shadow'>
+  <view class='activity-box'>
+    <image src='http://192.168.7.6:8080/static/xccImage/icon-clock.png' style='width:120rpx;height:120rpx;margin-right:20rpx;'></image>
+    <view class='activity-right'>
+      <view class='activity-name'>礼尚·乐筹第二期</view>
+      <view class='activity-desc'>礼尚·乐筹第二期</view>
+    </view>
+  </view>
+  <view class='activity-title'>参与次数:</view>
+  <view class='input-box'>
+    <view class='minus'>-</view>
+    <input type='number' class='input-number' placeholder='1'></input>
+    <view class='add'>+</view>
+    <text class='current-stock'>最多参加10次</text>
+  </view>
+  <view class='activity-title'>参与方式:</view>
+  <view class='join-type'>
+    <text>4毫升洋河蓝色经典</text>
+    <text>4毫升洋河蓝色经典</text>
+    <text>4毫升洋河蓝色经典</text>
+    <text>4毫升洋河蓝色经典</text>
+    <text>4毫升洋河蓝色经典</text>
+  </view>
+</view>
+<view class='section'>
+  <view class='activity-box'>
+    <image src='http://192.168.7.6:8080/static/xccImage/icon-clock.png' style='width:120rpx;height:120rpx;margin-right:20rpx;'></image>
+    <view class='activity-right'>
+      <view class='activity-name'>4毫升洋河蓝色经典</view>
+      <view class='activity-name'>持有35毫升</view>
+    </view>
+  </view>
+  <view class='order-item no-border'>
+    <text>兑换总量</text>
+    <text>40毫升</text>
+    <text>56元</text>
+    </view>
+    <view class='order-item'>
+    <text>最多抵扣</text>
+    <text>-35毫升</text>
+    <text>49元</text>
+    </view>
+    <view class='order-item buzu'>
+    <text>补足</text>
+    <text>5毫升</text>
+    <text>7元</text>
+  </view>
+</view>
+<view class='buy-bottom'>
+      <view>
+        <text class='total-title'>共支付</text>
+        <text class='total-value'>1.4元</text>
+      </view>
+      <view class='btn-buy' catchtap='showOrder'>继续参加</view>
+    </view>

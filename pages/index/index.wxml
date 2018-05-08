@@ -3,7 +3,7 @@
   <block wx:for="{{background}}" wx:key="*this">
     <swiper-item>
       <view class="swiper-item {{item}}">
-      <navigator url=''>
+      <navigator url='../activity/activity'>
       <image src=''></image>
       </navigator>
       </view>

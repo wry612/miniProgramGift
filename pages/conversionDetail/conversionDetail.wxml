@@ -1,0 +1,26 @@
+<!--pages/conversionDetail/conversionDetail.wxml-->
+<view class='section'>
+  <view class='section-title'>兑换成功</view>
+  <view class='activity-box'>
+    <image src='http://192.168.7.6:8080/static/xccImage/icon-clock.png' style='width:120rpx;height:120rpx;margin-right:20rpx;'></image>
+    <view class='activity-right'>
+      <view class='activity-name'>爱奇艺月卡</view>
+      <view class='activity-desc'>价值￥10元</view>
+    </view>
+  </view>
+  <view class='activity-box' style='margin-top:20rpx;'>
+    <view style='width:120rpx;height:100rpx;margin-right:20rpx;'></view>
+    <view class='activity-right'>
+      <view class='activity-type'>兑换数量:
+        <text>1份</text>
+      </view>
+      <view class='activity-type'>兑换方式:
+        <text>5毫升洋河蓝色经典</text>
+      </view>
+    </view>
+  </view>
+  <view class='bottom-wrap'>
+    <navigator>查看卡券</navigator>
+    <navigator>查看活动</navigator>
+  </view>
+</view>

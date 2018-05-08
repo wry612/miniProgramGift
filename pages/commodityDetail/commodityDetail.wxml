@@ -54,38 +54,65 @@
 </view>
 <view class='fixed-bottom'>
   <image src='http://192.168.7.6:8080/static/xccImage/icon-market.png' style='width:34rpx;height:31rpx;margin-right:10rpx;'></image>
-  <text class='buy'>立即购买</text>
+  <text class='buy' bindtap='showBuy'>立即购买</text>
 </view>
-<view class="page-cover">
+<view class="page-cover {{buyShow?'show':''}}" bindtap='hideBuy'>
   <view class='buy-wrap'>
-    <view>
-      <image src='http://192.168.7.6:8080/static/xccImage/packet-floor.png'></image>
+    <view class='buy-desc'>
+      <image src='http://192.168.7.6:8080/static/xccImage/packet-floor.png' style='width:120rpx;height:120rpx;margin-right:20rpx;'></image>
       <view>
-        <view>小罐礼茶</view>
-        <view>已选择：
-          <text>1克</text>(50克/罐) </view>
+        <view class='desc-name'>小罐礼茶</view>
+        <view class='desc-number'>已选择：
+          <text class='number'>1克</text>(50克/罐) </view>
       </view>
     </view>
-    <view>
+    <view class='buy-title'>
       规格
     </view>
-    <view>
-      <button>克</button>
-      <button>罐</button>
+    <view class='standard-box'>
+      <view class='standard-item active'>克</view>
+      <view class='standard-item'>罐</view>
     </view>
-    <view>数量</view>
-    <view>
-      <button>-</button>
-      <input type='number'></input>
-      <button>+</button>
-      <text>当前库存(2200克)</text>
+    <view class='buy-title'>数量</view>
+    <view class='input-box'>
+      <view class='minus'>-</view>
+      <input type='number' class='input-number' placeholder='1'></input>
+      <view class='add'>+</view>
+      <text class='current-stock'>当前库存(2200克)</text>
     </view>
-    <view>
+    <view class='buy-bottom'>
       <view>
-        <text>总价</text>
-        <text>1.4元</text>
+        <text class='total-title'>总价</text>
+        <text class='total-value'>1.4元</text>
       </view>
-      <view>立即购买</view>
+      <view class='btn-buy' catchtap='showOrder'>立即购买</view>
+    </view>
+  </view>
+</view>
+<view class="page-cover {{orderShow?'show':''}}" bindtap='hideOrder'>
+  <view class='dialog-wrap'>
+    <view class='dialog-header'>
+      <text>订单金额</text>
+      <text>7元</text>
+    </view>
+    <view class='dialog-body'>
+      <view class='body-tip'>确认参加后，将扣除李宝账户中抵扣的35毫升洋河蓝色经典</view>
+      <view class='body-item'>
+        <text>洋河蓝色经典</text>
+        <text>5毫升</text>
+      </view>
+      <view class='body-item'>
+        <text>单价</text>
+        <text>1.4元/毫升</text>
+      </view>
+      <view class='body-item'>
+        <text>总价</text>
+        <text>7元</text>
+      </view>
+    </view>
+    <view class='dialog-footer'>
+      <button plain="true">取消</button>
+      <button plain="true" class='ok'>确定</button>
     </view>
   </view>
 </view>

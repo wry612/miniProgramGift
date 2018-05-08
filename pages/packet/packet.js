@@ -20,6 +20,7 @@ Page({
     wx.showModal({
       title: '提示',
       content: '这是一个模态弹窗',
+      confirmColor:'#bf9a5c',
       success: function (res) {
         if (res.confirm) {
          

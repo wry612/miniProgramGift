@@ -1,11 +1,16 @@
 {
   "pages": [
-    "pages/commodityDetail/commodityDetail",
+    "pages/activity/activity",
+    
     "pages/index/index",
     "pages/packet/packet",
     "pages/takeGoods/takeGoods",
     "pages/user/user",
-    "pages/commodity/commodity"
+    "pages/commodity/commodity",
+    "pages/commodityDetail/commodityDetail",
+    "pages/activityDetail/activityDetail",
+    "pages/drawDetail/drawDetail" ,   
+    "pages/conversionDetail/conversionDetail"    
   ],
   "window": {
     "backgroundTextStyle": "light",

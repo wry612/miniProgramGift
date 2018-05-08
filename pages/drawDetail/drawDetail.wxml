@@ -1,0 +1,33 @@
+<!--pages/drawDetail/drawDetail.wxml-->
+<view class='section'>
+  <view class='section-title'>您已经成功参加：</view>
+  <view class='activity-box'>
+    <image src='http://192.168.7.6:8080/static/xccImage/icon-clock.png' style='width:120rpx;height:120rpx;margin-right:20rpx;'></image>
+    <view class='activity-right'>
+      <view class='activity-name'>抽iPhone X活动</view>
+      <view class='activity-desc'>距结束1天15时6分</view>
+    </view>
+  </view>
+  <view class='section-type'>
+    <image src='http://192.168.7.6:8080/static/xccImage/dollarLabel.png' style='width:52rpx;height:30rpx;margin-right:10rpx;'></image>
+    <text>券码</text>
+  </view>
+  <view class='ticket-wrap'>
+    <text>23547222,</text>
+    <text> 23547222,</text>
+    <text> 23547222,</text>
+    <text> 23547222,</text>
+    <text> 23547222,</text>
+    <text> 23547222,</text>
+    <text> 23547222,</text>
+    <text> 23547222,</text>
+    <text> 23547222,</text>
+    <text> 23547222,</text>
+    <text> 23547222,</text>
+    <text> 23547222</text>
+  </view>
+  <view class='bottom-wrap'>
+    <navigator>参与详情</navigator>
+    <navigator>查看活动</navigator>
+  </view>
+</view>

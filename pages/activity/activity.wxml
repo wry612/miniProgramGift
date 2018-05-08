@@ -1,0 +1,89 @@
+<!--pages/activity/activity.wxml-->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{background}}" wx:key="*this">
+    <swiper-item>
+      <view class="swiper-item {{item}}">
+        <navigator url=''>
+          <image src=''></image>
+        </navigator>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
+<view wx:if="{{type=='draw'}}">
+  <view class="activity-wrap">
+    <view class='title'>礼尚·乐筹第二期</view>
+    <view>
+      <view class='time'>
+        <image src='http://192.168.7.6:8080/static/xccImage/icon-clock.png' style='width:24rpx;height:24rpx;'></image>
+        <view>距活动结束
+          <text>6</text>天
+          <text>13</text>时
+          <text>6</text>分</view>
+      </view>
+      <view class='process-outer'>
+        <view class='process-inner' style='width:{{width}}'></view>
+      </view>
+      <view class='process-text'>
+        <view>活动进度：
+          <text>40/100</text>
+        </view>
+        <navigator url=''>查看参与详情</navigator>
+      </view>
+    </view>
+  </view>
+  <view class='detail-wrap'>
+    <view class='title'>
+      <text>活动说明</text>
+      <navigator url=''>
+        <image src='http://192.168.7.6:8080/static/xccImage/icon-circle.png' style='width:24rpx;height:24rpx;'></image>
+        <text>计算方式</text>
+      </navigator>
+    </view>
+    <view>
+      <view class='detail-info'>• 到达活动开奖人次后，不可报名，等待开奖</view>
+      <view class='detail-info'>• 如未中奖，礼尚将退还参加活动冻结的持仓</view>
+    </view>
+    <view class='title'>活动详情</view>
+  </view>
+  <view>
+    <image src='http://192.168.7.6:8080/static/xccImage/packet-bg.png' style='width:100%;'></image>
+    <image src='http://192.168.7.6:8080/static/xccImage/packet-bg.png' style='width:100%;'></image>
+  </view>
+  <view class='join-bottom'>
+    <navigator url='../activityDetail/activityDetail'>立即参与</navigator>
+  </view>
+</view>
+<view wx:if="{{type=='conversion'}}">
+  <view class="activity-wrap">
+    <view class='title'>
+      <text>爱奇艺一个月黄金会员</text>
+      <view class='outer'>
+        <view class='inner'>兑换95份</view>
+      </view>
+    </view>
+    <view class='process-text'>
+      <view>市场价
+        <text>￥10</text>
+      </view>
+      <text>限量100份</text>
+    </view>
+  </view>
+  <view class='detail-wrap'>
+    <view class='title'>
+      <text>活动说明</text>
+    </view>
+    <view>
+      <view class='detail-info'>• 到达活动开奖人次后，不可报名，等待开奖</view>
+      <view class='detail-info'>• 如未中奖，礼尚将退还参加活动冻结的持仓</view>
+    </view>
+    <view class='title'>活动详情</view>
+  </view>
+  <view>
+    <image src='http://192.168.7.6:8080/static/xccImage/packet-bg.png' style='width:100%;'></image>
+    <image src='http://192.168.7.6:8080/static/xccImage/packet-bg.png' style='width:100%;'></image>
+  </view>
+  <view class='join-bottom'>
+    <navigator url='../activityDetail/activityDetail'>立即兑换</navigator>
+  </view>
+</view>

@@ -1,0 +1,124 @@
+/* pages/activityDetail/activityDetail.wxss */
+.input-box{
+  display: flex;
+  justify-content: flex-start;
+}
+.minus,.add{
+  width: 78rpx;
+  height: 78rpx;
+  color:#000;
+  font-size:14pt;
+  font-weight:bold;
+  text-align: center;
+  line-height: 78rpx;
+  border:1rpx solid #ccc;
+}
+.input-number{
+  width: 116rpx;
+  height: 78rpx;
+  color:#666;
+  font-size: 12pt;
+  text-align: center;
+  border-top:1rpx solid #ccc;
+  border-bottom:1rpx solid #ccc;
+}
+.current-stock{
+  margin-left:20rpx;
+  color:#999;
+  font-size:9pt;
+  line-height: 78rpx;
+}
+.section{
+  padding:30rpx;
+}
+.activity-box{
+  display: flex;
+  justify-content: flex-start;
+}
+.activity-right{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.activity-name{
+  font-size:12pt;
+  line-height: 45rpx;
+}
+.activity-desc{
+  color:#999;
+  font-size:9pt;
+  line-height: 45rpx;
+}
+.activity-title{
+  padding:25rpx 0;
+  color:#666;
+  font-size:12pt;
+}
+.join-type{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.join-type text{
+  height: 45rpx;
+  padding:0 10rpx;
+  margin-right:20rpx;
+  margin-bottom:20rpx;
+  color:#666;
+  font-size:9pt;
+  line-height: 43rpx;
+  border:1rpx solid #ccc;
+}
+.shadow{
+  padding-bottom:10rpx;
+  box-shadow:0 9rpx 9.6rpx 0.4rpx rgba(179,156,132,0.2);
+}
+.order-item{
+  display: flex;
+  height: 60rpx;
+  align-items: center;
+  justify-content: space-between;
+  border-top:1rpx solid #ccc;
+}
+.order-item.no-border{
+  margin-top:10rpx;
+  border-top:none;
+}
+.order-item text{
+color:#999;
+  font-size:9pt;
+}
+.order-item.buzu text{
+  color:#bf9a5c;
+  font-size:12pt;
+}
+.buy-bottom{
+  position: absolute;
+  left:0;
+  bottom:0;
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 16rpx rgba(0,0,0,0.3);
+}
+.total-title{
+  margin-left:40rpx;
+  font-size:13pt;
+  line-height: 100rpx;
+}
+.total-value{
+  margin-left:10rpx;
+  color:#bf9a5c;
+  font-size:13pt;
+  line-height: 100rpx;
+}
+.btn-buy{
+  width: 242rpx;
+  height: 100rpx;
+  color:#fff;
+  font-size:13pt;
+  text-align: center;
+  line-height: 100rpx;
+  background: #bf9a5c;
+}
