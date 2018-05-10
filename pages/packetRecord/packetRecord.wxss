@@ -1,0 +1,133 @@
+/* pages/packetRecord/packetRecord.wxss */
+page{
+  height: 100%;  
+  background: #e6e6e6;
+}
+.page-nav{
+  position: fixed;
+  left:0;
+  top:0;
+  width: 100%;
+  height: 88rpx;
+  font-size:11pt;
+  text-align: center;
+  background: #fcfcfc;
+  border-top:1rpx solid #f3f3f3;
+  z-index: 1;
+}
+.nav-item{
+  display: inline-block;
+  width: 180rpx;
+  height:82rpx;
+  margin:0 30rpx;
+  line-height: 82rpx;
+}
+.nav-active{
+  color:#bf9a5c;
+  border-bottom:6rpx solid #bf9a5c;
+}
+.swiper{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+swiper{
+  width: 100%;
+  height: 100%;
+  margin-top:90rpx;
+}
+.section{
+  background: #fff;
+}
+.section-date{
+  height: 60rpx;
+  padding:0 30rpx;
+  color:#666;
+  font-size:9pt;
+  line-height: 60rpx;
+  background: #e7e0ce;
+}
+.section-date.current{
+  background: #f3dfab;
+  box-shadow: 0 7rpx 7.68rpx 0.32rpx rgba(191,154,92,0.5);
+}
+.section-item{
+  height: 120rpx;  
+  padding:0 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom:1rpx solid #f3f3f3;
+}
+.name,.number{
+  color:#666;
+  font-size:12pt;
+}
+.center{
+  width: 160rpx;
+  text-align: right;
+}
+.right{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.time{
+  margin-top:10rpx;
+  color:#ccc;
+  font-size:8pt;
+}
+.packet-wrap{
+  display: flex;
+  justify-content: flex-start;
+  margin:20rpx 10rpx;
+  padding: 30rpx 55rpx;
+  background: #32302d;
+  border-radius: 10rpx;
+}
+.circle-box{
+  width: 198rpx;
+  height: 198rpx;
+  border:1rpx solid #3b3833;
+  border-radius: 100%;
+}
+.circle-name{
+  margin-top:60rpx;
+  color:#bf9a5c;
+  font-size:21pt;
+  text-align: center;
+}
+.circle-tip{
+  margin-top:35rpx;
+  color:#cccccc;
+  font-size:8pt;
+  text-align: center;
+}
+.packet-text{
+  margin-left:90rpx;
+}
+.text-top{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100rpx;
+  color:#cccccc;
+  font-size:8pt;
+}
+.text-top text{
+  margin-left:20rpx;
+  color:#bf9a5c;
+  font-size:12pt;
+}
+.text-bottom{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100rpx;
+  color:#cccccc;
+  font-size:8pt;
+}
+.text-bottom text{
+  color:#999;
+  font-size:9pt;
+}

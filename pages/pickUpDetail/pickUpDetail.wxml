@@ -1,0 +1,63 @@
+<!--pages/pickUpDetail/pickUpDetail.wxml-->
+<view class='goods-detail'>
+  <view>
+    <text class='key'>申请时间：</text>
+    <text class='value'>2017.04.24</text>
+  </view>
+  <view>
+    <text class='key'>交易单号：</text>
+    <text class='value'>12852520</text>
+  </view>
+  <view>
+    <text class='key'>交易状态：</text>
+    <text class='value green'>已发货</text>
+  </view>
+</view>
+<view class='goods-wrap'>
+  <image src='http://192.168.7.6:8080/static/xccImage/icon-clock.png' style='width:120rpx;height:120rpx;margin-right:20rpx;'></image>
+  <view class='goods-name'>
+    <view class='name'>
+      <text>小罐礼茶</text>
+      <text>2罐</text>
+    </view>
+    <view class='goods-unit'>罐(50克)</view>
+  </view>
+</view>
+<view class='address-box'>
+  <view class='address-desc'>
+    <view class='default'>
+      <image src='http://192.168.7.6:8080/static/xccImage/address.png' style='width:45rpx;height:61rpx;margin-right:40rpx;'></image>
+    </view>
+    <view class='address-detail'>
+      <view class='detail-name'>
+        <text>岱永明</text>
+        <text>13912348888</text>
+      </view>
+      <view class='detail-address'>江苏省南京市梦都大街150号建筑师工社701</view>
+    </view>
+  </view>
+</view>
+<view class='wl'>
+  <image src='http://192.168.7.6:8080/static/xccImage/truck.png' style='width:80rpx;height:80rpx;margin-right:20rpx;'></image>
+  <view>
+    <view>物流公司:顺丰快递</view>
+    <view>物流单号：25655084472</view>
+  </view>
+</view>
+<view class="express-wrap">
+  <view wx:for="{{datum}}">
+    <view class="left-process first" wx:if="{{index==0}}">
+      <view class="circle-outer">
+        <view class="circle-inner"></view>
+      </view>
+    </view>
+    <view class="left-process last" wx:if="{{index==datum.length-1}}">
+      <view class="circle"></view>
+    </view>
+    <view class="left-process" wx:if="{{index>0&&index<datum.length-1}}">
+      <view class="circle"></view>
+    </view>
+    <view class="time">{{item.time}}</view>
+    <view class="context">{{item.context}}</view>
+  </view>
+</view>

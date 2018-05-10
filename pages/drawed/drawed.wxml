@@ -1,0 +1,52 @@
+<!--pages/drawed/drawed.wxml-->
+<view class='draw-top'>
+  <view>
+    <image src='http://192.168.7.6:8080/static/xccImage/jiangpai.png' style='width:36rpx;height:40rpx;'></image>
+  </view>
+  <view class='draw-time'>开奖时间：2017年6月13日 8:00</view>
+</view>
+<view class='draw-wrap'>
+  <view class="draw-section">
+    <text class='type'>一等奖</text>
+    <text class='type-name'>iPhoneX</text>
+  </view>
+  <view class='draw-item first'>
+    <image src='http://192.168.7.6:8080/static/xccImage/jiangpai.png' style='width:80rpx;height:80rpx;margin-right:30rpx;'></image>
+    <view>
+      <view class='name'>清风自来</view>
+      <view class='number'>券码：25642214</view>
+    </view>
+  </view>
+  <view class="draw-section">
+    <text class='type'>二等奖</text>
+    <text class='type-name'>飞利浦家用电热水器</text>
+  </view>
+  <view class='draw-item'>
+    <image src='http://192.168.7.6:8080/static/xccImage/jiangpai.png' style='width:80rpx;height:80rpx;margin-right:30rpx;'></image>
+    <view>
+      <view class='name'>清风自来</view>
+      <view class='number'>券码：25642214</view>
+    </view>
+  </view>
+  <view class='draw-item highlight'>
+    <image src='http://192.168.7.6:8080/static/xccImage/jiangpai.png' style='width:80rpx;height:80rpx;margin-right:30rpx;'></image>
+    <view>
+      <view class='name'>清风自来</view>
+      <view class='number'>券码：25642214</view>
+    </view>
+  </view>
+  <view class='draw-item'>
+    <image src='http://192.168.7.6:8080/static/xccImage/jiangpai.png' style='width:80rpx;height:80rpx;margin-right:30rpx;'></image>
+    <view>
+      <view class='name'>清风自来</view>
+      <view class='number'>券码：25642214</view>
+    </view>
+  </view>
+  <view class='draw-item'>
+    <image src='http://192.168.7.6:8080/static/xccImage/jiangpai.png' style='width:80rpx;height:80rpx;margin-right:30rpx;'></image>
+    <view>
+      <view class='name'>清风自来</view>
+      <view class='number'>券码：25642214</view>
+    </view>
+  </view>
+</view>

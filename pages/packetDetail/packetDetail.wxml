@@ -1,0 +1,23 @@
+<!--pages/packetDetail/packetDetail.wxml-->
+<view class='white'>
+<view class='user-img'>
+  <image src='http://192.168.7.6:8080/static/xccImage/jiangpai.png' style='width:140rpx;height:140rpx;'></image>
+</view>
+<view class='tip'>“好茶需与好友共享”</view>
+<view class='name'>
+  <text>20克</text>小罐礼茶</view>
+<view class='value'>价值约 40元</view>
+</view>
+<view class='user-list'>
+  <view class='list-header'>已领取1/2个，5/15克</view>
+  <view class='list-item'>
+    <image src='http://192.168.7.6:8080/static/xccImage/jiangpai.png' style='width:80rpx;height:80rpx;'></image>
+    <view class='list-box'>
+      <view class='box-top'>
+        <text>星空</text>
+        <text>5克</text>
+      </view>
+      <view class='box-bottom'>2017-02-12 10:52:43</view>
+    </view>
+  </view>
+</view>

@@ -1,18 +1,11 @@
-// pages/activity/activity.js
+// pages/pickUpDetail/pickUpDetail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    background: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
-    indicatorDots: true,
-    vertical: false,
-    autoplay: false,
-    interval: 2000,
-    duration: 500,
-    width:'30%',
-    type:'draw'
+    datum: [{ time: '2017.04.10 17:38', context: '正在派件途中，请你准备签收（派件人：张浩，电话：1852346842）' }, { time: '2017.04.10 17:38', context: '快件到达【南京建邺奥体中心营业厅】' }, { time: '2017.04.10 17:38', context: '您的订单已提交仓库处理' }]
   },
 
   /**

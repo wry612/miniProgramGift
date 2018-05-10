@@ -1,5 +1,7 @@
-/* pages/activityDetail/activityDetail.wxss */
-
+/* pages/pickUpGoods/pickUpGoods.wxss */
+page{
+  background: #f3f3f3;
+}
 .input-box {
   display: flex;
   justify-content: flex-start;
@@ -35,6 +37,11 @@
 
 .section {
   padding: 30rpx;
+  background: #fff;
+}
+
+.value-section {
+  padding: 10rpx 30rpx;
 }
 
 .activity-box {
@@ -50,13 +57,19 @@
 
 .activity-name {
   font-size: 12pt;
-  line-height: 45rpx;
+  line-height: 40rpx;
+}
+
+.activity-unit {
+  color: #999;
+  font-size: 9pt;
+  line-height: 40rpx;
 }
 
 .activity-desc {
-  color: #999;
-  font-size: 9pt;
-  line-height: 45rpx;
+  color: #666;
+  font-size: 12pt;
+  line-height: 40rpx;
 }
 
 .activity-title {
@@ -69,17 +82,6 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-}
-
-.join-type text {
-  height: 45rpx;
-  padding: 0 10rpx;
-  margin-right: 20rpx;
-  margin-bottom: 20rpx;
-  color: #666;
-  font-size: 9pt;
-  line-height: 43rpx;
-  border: 1rpx solid #ccc;
 }
 
 .shadow {
@@ -107,7 +109,7 @@
 
 .order-item.buzu text {
   color: #bf9a5c;
-  font-size: 12pt;
+  font-size: 11pt;
 }
 
 .buy-bottom {
@@ -142,4 +144,50 @@
   text-align: center;
   line-height: 100rpx;
   background: #bf9a5c;
+}
+.address-box{
+  margin-top:10rpx;
+  padding:30rpx 40rpx 20rpx;
+  background: #fff;
+}
+.address-desc{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.address-detail{
+  width: 580rpx;
+}
+.detail-name{
+  display: flex;
+  justify-content: space-between;
+  height: 40rpx;
+  font-size:11pt;
+}
+.detail-address{
+  color:#666;
+  font-size:11pt;
+  line-height: 1.5;
+}
+.arrow{
+  display: flex;
+  margin-top:20rpx;
+  justify-content: flex-end;
+}
+.default{
+  position: relative;
+}
+.default text{
+  position: absolute;
+  left:-8rpx;
+  top:70rpx;
+  width: 60rpx;
+  height: 40rpx;
+  color:#bf9a5c;
+  font-size:9pt;
+  text-align: center;
+  line-height: 40rpx;
+  background: #e4d5bb;
+  border:1rpx solid #bf9a5c;
+  border-radius: 8rpx;
 }

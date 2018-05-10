@@ -11,8 +11,15 @@
   </block>
 </swiper>
 <view wx:if="{{type=='draw'}}">
+<view class='draw-result'>
+<image src='http://192.168.7.6:8080/static/xccImage/icon-clock.png' style='width:80rpx;height:80rpx;margin-right:25rpx;'></image>
+<view>
+<view class='draw-name'>恭喜您 获得了Beats耳机</view>
+<view class='draw-num'><text>券码：25642214</text><navigator>查看全部中奖信息</navigator></view>
+</view>
+</view>
   <view class="activity-wrap">
-    <view class='title'>礼尚·乐筹第二期</view>
+    <view class='title'><text>礼尚·乐筹第二期   <text class='over'>已结束</text></text></view>
     <view>
       <view class='time'>
         <image src='http://192.168.7.6:8080/static/xccImage/icon-clock.png' style='width:24rpx;height:24rpx;'></image>
@@ -57,16 +64,17 @@
 <view wx:if="{{type=='conversion'}}">
   <view class="activity-wrap">
     <view class='title'>
-      <text>爱奇艺一个月黄金会员</text>
+      <text>爱奇艺一个月黄金会员<text class='over'>已结束</text></text>
       <view class='outer'>
-        <view class='inner'>兑换95份</view>
+        <view class='inner'></view>
+        <text class='inner-text'>兑换95份</text>
       </view>
     </view>
     <view class='process-text'>
       <view>市场价
-        <text>￥10</text>
+        <text class='value'>￥10</text>
       </view>
-      <text>限量100份</text>
+      <text class='num'>限量100份</text>
     </view>
   </view>
   <view class='detail-wrap'>

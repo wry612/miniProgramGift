@@ -1,10 +1,64 @@
 /* pages/activity/activity.wxss */
+swiper{
+  display: block;
+  width: 100%;
+  height:  420rpx;
+}
+.swiper-item{
+  display: block;
+  height: 420rpx;
+  background: #ccc;
+}
+.draw-result{
+  display: flex;
+  justify-content: flex-start;
+  height: 80rpx;
+  padding:30rpx;
+  background: #32302d;
+}
+.draw-result .draw-name{
+  width: 580rpx;
+  margin-bottom:20rpx;
+  color:#bf9a5c;
+  font-size:12pt;
+  line-height: 30rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space:nowrap;
+}
+.draw-result .draw-num{
+  display: flex;
+  width: 580rpx;
+  height: 30rpx;
+  justify-content: space-between;
+}
+.draw-result .draw-num text{
+  color:#999;
+  font-size:9pt;
+}
+.draw-result .draw-num navigator{
+  color:#bf9a5c;
+  font-size:9pt;
+  text-decoration: underline;
+}
 .activity-wrap{
   padding:40rpx 30rpx;
   box-shadow:0 9rpx 9.6rpx 0.4rpx rgba(179,156,132,0.2);
 }
 .activity-wrap .title{
+  display: flex;
+  justify-content: space-between;
   font-size:12pt;
+}
+.activity-wrap .title .over{
+  padding:0 20rpx;
+  margin-left:10rpx;
+  color:#fff;
+  font-size:9pt;
+  text-align: center;
+  line-height: 32rpx;
+  background: #cccccc;
+  border-radius: 8rpx;
 }
 .activity-wrap .time{
   display: flex;
@@ -20,9 +74,35 @@
 .activity-wrap .time text{
   color:#cc0000;
 }
+.activity-wrap .outer{
+  position: relative;
+  width: 160rpx;
+  height: 36rpx;
+  background: #fff;
+  border:1rpx solid #bf9a5c;
+  border-radius: 8rpx;
+}
+.activity-wrap .inner{
+  width: 50%;
+  height: 100%;
+  background: #dfccad;
+  border-radius: 4rpx;
+}
+.inner-text{
+  position: absolute;
+  left:0;
+  top:0;
+  width: 100%;
+  color:#666;
+  font-size:7pt;
+  text-align: center;
+  line-height: 36rpx;
+}
 .process-text{
   display: flex;
+  height: 30rpx;
   margin-top:20rpx;
+  align-items: center;
   justify-content: space-between;
 }
 .process-text view{
@@ -30,6 +110,13 @@
 }
 .process-text view text{
   color:#ff9933;
+}
+.process-text .value{
+  font-size:15pt;
+}
+.process-text .num{
+  color:#666;
+  font-size:7pt;
 }
 .process-text navigator{
   color:#bf9a5c;

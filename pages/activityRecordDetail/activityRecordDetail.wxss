@@ -1,0 +1,88 @@
+/* pages/activityRecordDetail/activityRecordDetail.wxss */
+page{
+  background: #f3f3f3;
+}
+.ticket-section{
+  padding:0 30rpx;
+  border-top:1rpx solid #ccc;
+  background: #fff;
+}
+.section-type{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top:10rpx;
+  width: 100%;
+  height: 90rpx;
+  font-size:12pt;
+}
+.ticket-wrap{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0 40rpx;
+  border-top: 1rpx dashed #ccc;
+  border-bottom: 1rpx dashed #ccc;
+}
+.ticket-wrap text{
+  height: 60rpx;
+  color:#666;
+  font-size:10pt;
+  line-height: 60rpx;
+}
+.bottom-tip{
+  display: flex;
+  height: 64rpx;
+  align-items: center;
+  justify-content: center;
+}
+.bottom-tip text{
+  color:#666;
+  font-size:9pt;
+}
+.thead{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 60rpx;
+  padding:0 30rpx;
+  background: #f3dfab;
+}
+.thead text{
+  color:#666;
+  font-size:9pt;
+}
+.thead text:first-child{
+  width: 230rpx;
+}
+.thead text:nth-child(2){
+  width: 190rpx;
+}
+.thead text:nth-child(3){
+  width: 270rpx;
+}
+.tr{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 120rpx;
+  padding:0 30rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.tr text{
+  color:#333;
+  font-size:10pt;
+}
+.tr text:first-child{
+  width: 230rpx;
+}
+.tr text:nth-child(2){
+  width: 190rpx;
+}
+.tr text:nth-child(3){
+  width: 270rpx;
+}
+.user-section{
+  background: #fff;
+}

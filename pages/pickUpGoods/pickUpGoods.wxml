@@ -1,0 +1,59 @@
+<!--pages/pickUpGoods/pickUpGoods.wxml-->
+<view class='section shadow'>
+  <view class='activity-box'>
+    <image src='http://192.168.7.6:8080/static/xccImage/icon-clock.png' style='width:120rpx;height:120rpx;margin-right:20rpx;'></image>
+    <view class='activity-right'>
+      <view class='activity-name'>小罐礼茶</view>
+      <view class='activity-unit'>罐(50克)</view>
+      <view class='activity-desc'>当前持有80克</view>
+    </view>
+  </view>
+  <view class='activity-title'>提货数量:</view>
+  <view class='input-box'>
+    <view class='minus'>-</view>
+    <input type='number' class='input-number' placeholder='1'></input>
+    <view class='add'>+</view>
+    <text class='current-stock'>最多参加10次</text>
+  </view>
+</view>
+<view class='section value-section'>
+  <view class='order-item no-border'>
+    <text>提货总量</text>
+    <text>40毫升</text>
+    <text>56元</text>
+  </view>
+  <view class='order-item'>
+    <text>最多抵扣</text>
+    <text>-35毫升</text>
+    <text>49元</text>
+  </view>
+  <view class='order-item buzu'>
+    <text>实付</text>
+    <text>7元</text>
+  </view>
+</view>
+<navigator class='address-box'>
+  <view class='address-desc'>
+    <view class='default'>
+      <image src='http://192.168.7.6:8080/static/xccImage/address.png' style='width:45rpx;height:61rpx;margin-right:40rpx;'></image>
+      <text>默认</text>
+    </view>
+    <view class='address-detail'>
+      <view class='detail-name'>
+        <text>岱永明</text>
+        <text>13912348888</text>
+      </view>
+      <view class='detail-address'>江苏省南京市梦都大街150号建筑师工社701</view>
+    </view>
+  </view>
+  <view class='arrow'>
+    <image src='http://192.168.7.6:8080/static/xccImage/big-arrow.png' style='width:21rpx;height:40rpx;'></image>
+  </view>
+</navigator>
+<view class='buy-bottom'>
+  <view>
+    <text class='total-title'>共支付</text>
+    <text class='total-value'>1.4元</text>
+  </view>
+  <view class='btn-buy' catchtap='showOrder'>确认提货</view>
+</view>

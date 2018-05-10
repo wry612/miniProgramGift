@@ -62,10 +62,14 @@ swiper{
   align-items: center;
   justify-content: space-between;
 }
+.item text{
+  color:#666;
+}
 .item:first-child{
   margin-bottom:30rpx;
 }
 .small{
+  color:#666;
   font-size:10pt;
 }
 .small-tip{

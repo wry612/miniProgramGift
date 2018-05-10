@@ -1,18 +1,11 @@
-// pages/activity/activity.js
+// pages/activityRecord/activityRecord.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    background: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
-    indicatorDots: true,
-    vertical: false,
-    autoplay: false,
-    interval: 2000,
-    duration: 500,
-    width:'30%',
-    type:'draw'
+  
   },
 
   /**

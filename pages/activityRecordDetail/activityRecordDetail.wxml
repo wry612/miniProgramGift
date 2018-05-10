@@ -1,0 +1,52 @@
+<!--pages/activityRecordDetail/activityRecordDetail.wxml-->
+<view class='ticket-section'>
+  <view class='section-type'>
+    <image src='http://192.168.7.6:8080/static/xccImage/dollarLabel.png' style='width:52rpx;height:30rpx;margin-right:10rpx;'></image>
+    <text>券码</text>
+  </view>
+  <view class='ticket-wrap'>
+    <text>23547222,</text>
+    <text> 23547222,</text>
+    <text> 23547222,</text>
+    <text> 23547222,</text>
+    <text> 23547222,</text>
+    <text> 23547222,</text>
+    <text> 23547222,</text>
+    <text> 23547222,</text>
+    <text> 23547222,</text>
+    <text> 23547222,</text>
+    <text> 23547222,</text>
+    <text> 23547222</text>
+  </view>
+  <view class='bottom-tip'>
+    <image src='http://192.168.7.6:8080/static/xccImage/icon-down.png' style='width:12rpx;height:17rpx;margin-right:10rpx;'></image>
+    <text>所有记录</text>
+  </view>
+</view>
+<view class='user-section'>
+  <view class='thead'>
+    <text>昵称</text>
+    <text>券码</text>
+    <text>时间</text>
+  </view>
+  <view class='tr'>
+    <text>神容主若</text>
+    <text>21858620</text>
+    <text>07/01 08:36:04</text>
+  </view>
+  <view class='tr'>
+    <text>七月</text>
+    <text>21858620</text>
+    <text>07/01 08:36:04</text>
+  </view>
+  <view class='tr'>
+    <text>幸运之星</text>
+    <text>21858620</text>
+    <text>07/01 08:36:04</text>
+  </view>
+  <view class='tr'>
+    <text>草莓小姐</text>
+    <text>21858620</text>
+    <text>07/01 08:36:04</text>
+  </view>
+</view>

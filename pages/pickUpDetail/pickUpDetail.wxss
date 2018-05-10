@@ -1,0 +1,134 @@
+/* pages/pickUpDetail/pickUpDetail.wxss */
+page{
+  background: #f3f3f3;
+}
+.address-box{
+  padding:30rpx 40rpx 20rpx;
+  background: #fff;
+}
+.address-desc{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.address-detail{
+  width: 580rpx;
+}
+.detail-name{
+  display: flex;
+  justify-content: space-between;
+  height: 40rpx;
+  font-size:11pt;
+}
+.detail-address{
+  color:#666;
+  font-size:11pt;
+  line-height: 1.5;
+}
+.goods-detail{
+  padding:20rpx 25rpx;
+  font-size:9pt;
+  background: #fff;
+}
+.goods-detail view{
+  line-height: 40rpx;
+}
+.key{
+  color:#999;
+}
+.green{
+  color:#33cc33;
+}
+.goods-wrap{
+  display: flex;
+  justify-content: flex-start;
+  padding:40rpx 30rpx;
+  margin:1rpx 0 2rpx;
+  background: #fff;
+}
+.goods-name{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  width: 540rpx;
+}
+.name{
+  display: flex;
+  justify-content: space-between;
+  font-size:12pt;
+}
+.goods-unit{
+  color:#999;
+  font-size:9pt;
+}
+.wl{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 160rpx;
+  padding:0 30rpx;
+  font-size:12pt;
+  background: #fff3d4;
+  box-shadow: 0 10rpx 9rpx rgba(210,210,210,0.2) inset,0 9rpx 9.6rpx 0.4rpx rgba(179,156,132,0.2);
+}
+.wl view{
+  line-height: 40rpx;
+}
+.express-wrap{
+    padding:0 30rpx 40rpx 100rpx;
+}
+.express-wrap > view{
+    position: relative;
+    padding: 40rpx 20rpx 40rpx 40rpx;
+    border-bottom: 1rpx solid #ccc;
+}
+.express-wrap .time{
+    color:#999;
+    font-size:9pt;
+    line-height: 30rpx;
+}
+.express-wrap .context{
+    font-size:12px;
+    line-height: 36rpx;
+}
+.express-wrap .left-process{
+    position: absolute;
+    left:-25rpx;
+    top:0;
+    width: 2rpx;
+    height: 100%;
+    background: #ccc;
+}
+.express-wrap .left-process.first{
+    top:40rpx;
+}
+.express-wrap .left-process.last{
+    height: 50rpx;
+}
+.express-wrap .left-process .circle{
+    position: absolute;
+    left:-12rpx;
+    top:40rpx;
+    width: 24rpx;
+    height: 24rpx;
+    background: #cccccc;
+    border-radius: 100%;
+}
+.express-wrap .left-process .circle-outer{
+    position: absolute;
+    left:-18rpx;
+    top:0;
+    width: 36rpx;
+    height: 36rpx;
+    background: #ffd8b1;
+    border-radius: 100%;
+}
+.express-wrap .left-process .circle-inner{
+    position: absolute;
+    left:6rpx;
+    top:6rpx;
+    width: 24rpx;
+    height: 24rpx;
+    background: #ff9933;
+    border-radius: 100%;
+}

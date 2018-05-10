@@ -1,0 +1,44 @@
+/* pages/activityRecord/activityRecord.wxss */
+.section-date{
+  height: 60rpx;
+  padding:0 30rpx;
+  color:#666;
+  font-size:9pt;
+  line-height: 60rpx;
+  background: #f3dfab;
+  box-shadow: 0 7rpx 7.68rpx 0.32rpx rgba(191,154,92,0.5);
+}
+.section-item{
+  height: 120rpx;  
+  padding:0 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom:1rpx solid #f3f3f3;
+}
+.section-date{
+  height: 60rpx;
+  padding:0 30rpx;
+  color:#666;
+  font-size:9pt;
+  line-height: 60rpx;
+  background: #e7e0ce;
+}
+.section-date.current{
+  background: #f3dfab;
+  box-shadow: 0 7rpx 7.68rpx 0.32rpx rgba(191,154,92,0.5);
+}
+.name,.number{
+  color:#666;
+  font-size:12pt;
+}
+.right{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.time{
+  margin-top:10rpx;
+  color:#ccc;
+  font-size:8pt;
+}

@@ -1,0 +1,65 @@
+/* pages/packetDetail/packetDetail.wxss */
+page{
+  background: #f3f3f3;
+}
+.white{
+  background: #fff;
+}
+.user-img{
+  padding:30rpx 0 40rpx;
+  text-align: center;
+  border-top:1rpx solid #f3f3f3;
+}
+.tip{
+  padding-bottom: 30rpx;
+  margin:0 70rpx;
+  font-size:15pt;
+  text-align: center;
+  border-bottom: 1rpx solid #ccc;
+}
+.name{
+  margin-top:50rpx;
+  font-size:17pt;
+  text-align: center;
+}
+.name text{
+  color:#ff9933;
+}
+.value{
+  padding:30rpx 0 60rpx;
+  color:#666;
+  font-size:11pt;
+  text-align: center;
+  box-shadow: 0 9rpx 9.6rpx 0.4rpx rgba(179,156,132,0.2);  
+}
+.user-list{
+  margin-top:30rpx;
+  padding:0 20rpx;
+}
+.list-header{
+  color:#999;
+  font-size:9pt;
+  line-height: 50rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.list-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 138rpx;
+  padding: 0 15rpx;
+  border-bottom: 1rpx solid #ccc;  
+}
+.list-box{
+  width: 570rpx;
+}
+.box-top{
+  display: flex;
+  justify-content: space-between;
+  font-size:12pt;
+}
+.box-bottom{
+  margin-top:20rpx;
+  color:#999;
+  font-size:9pt;
+}

@@ -1,0 +1,52 @@
+/* pages/drawed/drawed.wxss */
+.draw-top{
+  padding: 35rpx 30rpx 30rpx;
+  text-align: center;
+}
+.draw-time{
+  margin-top:20rpx;
+  font-size:12pt;
+}
+.draw-section{
+  height: 100rpx;
+  padding:0 30rpx;
+  line-height: 100rpx;
+  border-top: 1rpx solid #ccc;
+}
+.draw-item{
+  height: 136rpx;
+  padding:0 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.draw-item.first{
+  border-top:1rpx dotted #ccc;
+}
+.draw-item.highlight{
+  background: #f3dfab;
+}
+.type{
+  color:#bf9a5c;
+  font-size:13pt;
+}
+.type-name{
+  margin-left:20rpx;
+  font-size:11pt;
+}
+.draw-item > view{
+  display: flex;
+  height: 80rpx;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.name{
+  color:#666;
+  font-size:12pt;
+  line-height: 32rpx;
+}
+.number{
+  color:#999;
+  font-size:9pt;
+  line-height: 32rpx;
+}

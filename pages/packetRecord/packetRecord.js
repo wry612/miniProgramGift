@@ -1,11 +1,11 @@
-// pages/comm/index.js
+// pages/packetRecord/packetRecord.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    current:0
   },
 
   /**

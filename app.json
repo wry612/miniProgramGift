@@ -1,16 +1,26 @@
 {
   "pages": [
-    "pages/activity/activity",
+    "pages/pickUpDetail/pickUpDetail",
     
     "pages/index/index",
     "pages/packet/packet",
     "pages/takeGoods/takeGoods",
     "pages/user/user",
+    "pages/activity/activity",
+    "pages/activityDetail/activityDetail",
     "pages/commodity/commodity",
     "pages/commodityDetail/commodityDetail",
-    "pages/activityDetail/activityDetail",
-    "pages/drawDetail/drawDetail" ,   
-    "pages/conversionDetail/conversionDetail"    
+    "pages/drawDetail/drawDetail",
+    "pages/drawed/drawed",
+    "pages/conversionDetail/conversionDetail",
+    "pages/activityList/activityList",
+    "pages/activityRecord/activityRecord",
+    "pages/packetRecord/packetRecord",
+    "pages/activityRecordDetail/activityRecordDetail",
+    "pages/packetDetail/packetDetail",
+    "pages/queryGoods/queryGoods",
+    "pages/queryBuyRecord/queryBuyRecord",
+    "pages/pickUpGoods/pickUpGoods"    
   ],
   "window": {
     "backgroundTextStyle": "light",

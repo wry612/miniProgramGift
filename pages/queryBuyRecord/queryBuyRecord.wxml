@@ -1,0 +1,51 @@
+<!--pages/queryBuyRecord/queryBuyRecord.wxml-->
+<view class='section'>
+  <view class='section-date current'>2017年5月</view>
+  <navigator class='section-item'>
+    <view>
+      <view class='name'>生普小罐茶</view>
+      <view class='time'>5-30 16:22:14</view>
+    </view>
+    <view class='number center'>123克</view>
+    <view class='right'>
+      <text class='number'>123.00元</text>
+      <image src='http://192.168.7.6:8080/static/xccImage/big-arrow.png' style='width:21rpx;height:40rpx;margin-left:25rpx;'></image>
+    </view>
+  </navigator>
+  <navigator class='section-item'>
+    <view>
+      <view class='name'>生普小罐茶</view>
+      <view class='time'>5-30 16:22:14</view>
+    </view>
+    <view class='number center'>123克</view>
+    <view class='right'>
+      <text class='number'>123.00元</text>
+      <image src='http://192.168.7.6:8080/static/xccImage/big-arrow.png' style='width:21rpx;height:40rpx;margin-left:25rpx;'></image>
+    </view>
+  </navigator>
+</view>
+<view class='section'>
+  <view class='section-date'>2017年4月</view>
+  <navigator class='section-item'>
+    <view>
+      <view class='name'>生普小罐茶</view>
+      <view class='time'>5-30 16:22:14</view>
+    </view>
+    <view class='number center'>123克</view>
+    <view class='right'>
+      <text class='number'>123.00元</text>
+      <image src='http://192.168.7.6:8080/static/xccImage/big-arrow.png' style='width:21rpx;height:40rpx;margin-left:25rpx;'></image>
+    </view>
+  </navigator>
+  <navigator class='section-item'>
+    <view>
+      <view class='name'>生普小罐茶</view>
+      <view class='time'>5-30 16:22:14</view>
+    </view>
+    <view class='number center'>123克</view>
+    <view class='right'>
+      <text class='number'>123.00元</text>
+      <image src='http://192.168.7.6:8080/static/xccImage/big-arrow.png' style='width:21rpx;height:40rpx;margin-left:25rpx;'></image>
+    </view>
+  </navigator>
+</view>
