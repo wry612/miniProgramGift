@@ -25,8 +25,15 @@
 }
 .arrow{
   display: flex;
-  margin-top:20rpx;
+  margin-top:10rpx;
   justify-content: flex-end;
+}
+.arrow text{
+  color:#bf9a5c;
+  font-size:9pt;
+}
+.arrow > view:first-child{
+  margin-right: 30rpx;
 }
 .default{
   position: relative;

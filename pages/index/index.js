@@ -13,6 +13,24 @@ Page({
     duration: 500
   },
   onLoad: function () {
+    wx.login({
+      success: function () {
+        wx.getUserInfo({
+          success: function (res) {
+            var simpleUser = res.userInfo;
+            console.error(simpleUser.nickName);
+          }
+        });
+      }
+    });
+    api.dataRequest({
+      url: 'https://api.weixin.qq.com/wxa/msg_sec_check', //仅为示例，并非真实的接口地址
+      method: "POST",
+      data: { access_token: api.config.userKey, content:'good'},
+      success: function (response) {
+          console.log(response)
+      }
+    })
   },
   onShow:function(){
     if(app.globalData.hasKey){

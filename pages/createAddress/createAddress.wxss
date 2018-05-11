@@ -1,1 +1,84 @@
 /* pages/createAddress/createAddress.wxss */
+page{
+  background: #f3f3f3;
+}
+.page-section{
+  margin-bottom: 20rpx;
+}
+.section-title{
+  padding:0 30rpx;
+  color:#666;
+  font-size:10pt;
+  line-height: 60rpx;
+}
+.weui-input{
+  padding:20rpx 30rpx;
+  width: 690rpx;
+  color:#333;
+  font-size:12pt;
+  line-height: 30rpx;
+  background: #fff;
+}
+.default{
+  display: flex;
+  height: 40rpx;
+  padding:0 30rpx;
+  margin-top:30rpx;
+  align-items: center;
+  justify-content: flex-start;
+}
+.default text{
+  color:#999;
+  font-size:9pt;
+}
+.join-bottom{
+  position: fixed;
+  left:0;
+  bottom:0;
+  width: 100%;
+  height: 100rpx;
+  color:#bf9a5c;
+  font-size:13pt;
+  text-align: center;
+  line-height: 100rpx;
+  background: #fff;
+  box-shadow: 0 0 16rpx rgba(0,0,0,0.3);
+}
+/**citys-picks-view**/
+.citypicker{ 
+  position: fixed;
+  bottom: 0px;
+  left:0;
+  width: 100%;
+  background: #fff;
+  z-index: 10;
+}
+citybody{
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+}
+
+.cityheader {
+  position: absolute;
+  top:0px;
+  width: 100%;
+  border-top:1rpx solid #f3f3f3;
+  border-bottom:1rpx solid #f3f3f3;
+  background: #fff;
+  z-index: 4;
+}
+
+.city-cancel {
+  float: left;
+  margin: 20rpx;
+  color: #818181;
+}
+
+.city-true {
+  float: right;
+  margin: 20rpx;
+  color: #2FB42E
+}

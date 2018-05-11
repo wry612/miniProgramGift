@@ -1,6 +1,7 @@
 var util = require("./util.js");
 const config = {
   baseUrl: "http://wangruoyu.developer.jsdttec.com",
+  userKey:''
 };
 
 //wx.request接口再封装
@@ -57,6 +58,7 @@ var apiFunction = {
               success: function (res3) {
                 if (res3.data.head.code == 0) {
                   wx.setStorageSync('userKey', res3.data.body.userKey);
+                  config.userKey = res3.data.body.userKey
                   doFunction();
                 } else {
                   wx.showToast({
@@ -65,42 +67,19 @@ var apiFunction = {
                 }
               }
             });
+          },
+          fail: function (res2) {
+            console.log(res2)
           }
         })
       },
-      fail: function (res) { },
+      fail: function (res) {
+        console.log(res)
+       },
       complete: function (res) { },
     });
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 module.exports = {
   config: config,
   xccApi: apiFunction,

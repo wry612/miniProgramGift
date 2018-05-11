@@ -1,2 +1,49 @@
 <!--pages/createAddress/createAddress.wxml-->
-<text>pages/createAddress/createAddress.wxml</text>
+<view class="page-section">
+  <view class="section-title">姓名</view>
+  <view class="input-box">
+    <input class="weui-input" type='text' placeholder="请输入姓名" value='岱永明' />
+  </view>
+</view>
+<view class="page-section">
+  <view class="section-title">手机号码</view>
+  <view class="input-box">
+    <input class="weui-input" maxlength="13" type='number' placeholder="请输入手机号码" value='岱永明' />
+  </view>
+</view>
+<view class="page-section">
+  <view class="section-title">省市区</view>
+  <view class="input-box">
+    <input placeholder="请选择省市区" disabled="true" class="weui-input" value="{{province}}-{{city}}-{{county}}" focus="{{focus}}" bindtap="open" />
+  </view>
+</view>
+<view class="page-section">
+  <view class="section-title">详细地址</view>
+  <view class="input-box">
+    <textarea class="weui-input" placeholder="请输入详细地址" value=''></textarea>
+  </view>
+</view>
+<view class='default'>
+  <image src='http://wangruoyu.developer.jsdttec.com/static/xccImage/check.png' style='width:36rpx;height:36rpx;margin-right:10rpx;'></image>
+  <text>设为默认</text>
+</view>
+<view class='join-bottom'>
+  保存地址
+</view>
+<view wx:if="{{condition}}" class="citypicker">
+  <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{value}}" bindchange="bindChange" class="citybody">
+    <view class="cityheader">
+      <view bindtap="open" class="city-cancel">取消</view>
+      <view bindtap="open" class="city-true">确定</view>
+    </view>
+    <picker-view-column>
+      <view wx:for="{{provinces}}" wx:key="item" style="line-height: 50px;padding-left:10px;">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{citys}}" wx:key="item" style="line-height: 50px;padding-left:10px;">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{countys}}" wx:key="item" style="line-height: 50px;padding-left:10px;">{{item}}</view>
+    </picker-view-column>
+  </picker-view>
+</view>

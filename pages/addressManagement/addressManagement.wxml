@@ -14,9 +14,16 @@
     </view>
   </view>
   <view class='arrow'>
-    <image src='http://192.168.7.6:8080/static/xccImage/big-arrow.png' style='width:21rpx;height:40rpx;'></image>
+    <navigator url='../createAddress/createAddress'>
+      <image src='http://192.168.7.6:8080/static/xccImage/edit.png' style='width:27rpx;height:26rpx;margin-right:10rpx;'></image>
+      <text>编辑</text>
+    </navigator>
+    <view bindtap='delete'>
+      <image src='http://192.168.7.6:8080/static/xccImage/delete.png' style='width:22rpx;height:26rpx;margin-right:10rpx;'></image>
+      <text>删除</text>
+    </view>
   </view>
 </view>
 <view class='join-bottom'>
-    <navigator url='../createAddress/createAddress'>新增收货地址</navigator>
-  </view>
+  <navigator url='../createAddress/createAddress'>新增收货地址</navigator>
+</view>
