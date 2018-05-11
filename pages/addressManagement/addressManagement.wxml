@@ -1,0 +1,22 @@
+<!--pages/addressManagement/addressManagement.wxml-->
+<view class='address-box'>
+  <view class='address-desc'>
+    <view class='default'>
+      <image src='http://192.168.7.6:8080/static/xccImage/address.png' style='width:45rpx;height:61rpx;margin-right:40rpx;'></image>
+      <text>默认</text>
+    </view>
+    <view class='address-detail'>
+      <view class='detail-name'>
+        <text>岱永明</text>
+        <text>13912348888</text>
+      </view>
+      <view class='detail-address'>江苏省南京市梦都大街150号建筑师工社701</view>
+    </view>
+  </view>
+  <view class='arrow'>
+    <image src='http://192.168.7.6:8080/static/xccImage/big-arrow.png' style='width:21rpx;height:40rpx;'></image>
+  </view>
+</view>
+<view class='join-bottom'>
+    <navigator url='../createAddress/createAddress'>新增收货地址</navigator>
+  </view>

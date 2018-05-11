@@ -21,7 +21,7 @@
     <view class='text'><text>活动</text></view>
   </navigator>
 </view>
-<navigator class='address'>
+<navigator url='../addressManagement/addressManagement' class='address'>
 <text>地址管理</text>
 <image src='http://wangruoyu.developer.jsdttec.com/static/xccImage/big-arrow.png' style='width:21rpx;height:40rpx;'></image>
 </navigator>

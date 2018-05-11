@@ -1,0 +1,62 @@
+/* pages/addressManagement/addressManagement.wxss */
+.address-box{
+  margin-top:10rpx;
+  padding:30rpx 40rpx 20rpx;
+  background: #fff;
+}
+.address-desc{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.address-detail{
+  width: 580rpx;
+}
+.detail-name{
+  display: flex;
+  justify-content: space-between;
+  height: 40rpx;
+  font-size:11pt;
+}
+.detail-address{
+  color:#666;
+  font-size:11pt;
+  line-height: 1.5;
+}
+.arrow{
+  display: flex;
+  margin-top:20rpx;
+  justify-content: flex-end;
+}
+.default{
+  position: relative;
+}
+.default text{
+  position: absolute;
+  left:-8rpx;
+  top:70rpx;
+  width: 60rpx;
+  height: 40rpx;
+  color:#bf9a5c;
+  font-size:9pt;
+  text-align: center;
+  line-height: 40rpx;
+  background: #e4d5bb;
+  border:1rpx solid #bf9a5c;
+  border-radius: 8rpx;
+}
+.join-bottom{
+  position: fixed;
+  left:0;
+  bottom:0;
+  width: 100%;
+  height: 100rpx;
+  background: #fff;
+  box-shadow: 0 0 16rpx rgba(0,0,0,0.3);
+}
+.join-bottom navigator{
+  color:#bf9a5c;
+  font-size:13pt;
+  text-align: center;
+  line-height: 100rpx;
+}

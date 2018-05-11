@@ -1,7 +1,6 @@
 {
   "pages": [
-    "pages/pickUpDetail/pickUpDetail",
-    
+    "pages/addressManagement/addressManagement",
     "pages/index/index",
     "pages/packet/packet",
     "pages/takeGoods/takeGoods",
@@ -20,7 +19,9 @@
     "pages/packetDetail/packetDetail",
     "pages/queryGoods/queryGoods",
     "pages/queryBuyRecord/queryBuyRecord",
-    "pages/pickUpGoods/pickUpGoods"    
+    "pages/pickUpGoods/pickUpGoods",
+    "pages/pickUpDetail/pickUpDetail",
+    "pages/createAddress/createAddress"
   ],
   "window": {
     "backgroundTextStyle": "light",
