@@ -1,67 +1,76 @@
 // pages/commodity/commodity.js
+const app = getApp()
+const api = app.appApi
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-    commodityList: [{ "name": "茶", "number": "256元/罐", "money": "8元/克" }, { "name": "茶", "number": "256元/罐", "money": "8元/克" }, { "name": "茶", "number": "256元/罐", "money": "8元/克" }],
-    current:0
+    commodityList: [],
+    current:0,
+    typeList:[]
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-  
+  getType: function () {
+    var that = this
+    api.dataRequest({
+      url: api.config.baseUrl + 'gift/queryCommodityTypeList', //仅为示例，并非真实的接口地址
+      method: "GET",
+      data: '',
+      success: function (response) {
+        if (response.data && response.data.code == '0') {
+          var data = response.data.body;
+          that.setData({
+            typeList:data
+            })
+            that.getCommodity()
+        }
+      }
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
+  getCommodity: function (event) {
+    var that = this
+    var typeId = 0    
+    if(event){
+      that.setData({
+        current: Number(event.currentTarget.dataset.currentId)+1
+      })
+      typeId = event.currentTarget.dataset.typeId
+    }else{
+      typeId = 0
+    }
+    api.dataRequest({
+      url: api.config.baseUrl + 'gift/queryCommodityContract', //仅为示例，并非真实的接口地址
+      method: "POST",
+      data: { commodityTypeId: typeId },
+      success: function (response) {
+        if (response.data && response.data.code == '0') {
+          var data = response.data.body;
+          that.setData({
+            commodityList: data
+          })
+        }
+      }
+    })
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
+    this.getType()
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-  
+    this.getType()
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
   
   }
 })

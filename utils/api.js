@@ -1,6 +1,6 @@
 var util = require("./util.js");
 const config = {
-  baseUrl: "http://wangruoyu.developer.jsdttec.com",
+  baseUrl: "http://wangruoyu.developer.jsdttec.com/xcx/",
   userKey:''
 };
 
@@ -18,14 +18,23 @@ const dataRequest = (requestObj) => {
     url: requestObj.url,
     data: requestData,
     header: requestObj.header ? requestObj.header : {
-      'content-type': 'application/json' // 默认值
+      //'content-type': 'application/json' // 默认值
+      "content-type":"application/x-www-form-urlencoded"
     },
     method: requestObj.method ? requestObj.method : "GET",
     dataType: 'json',
     responseType: 'text',
     success: function (res) {
       if (requestObj.success && typeof (requestObj.success) === "function") {
-        requestObj.success(res);
+        if (res.data && res.data.code==0){
+          requestObj.success(res);
+        }else{
+          wx.showModal({
+            title: '信息提示',
+            content: res.data?res.data.msg:'查询数据失败',
+            showCancel:false
+          })
+        }
       }
     },
     fail: function (res) {
@@ -48,7 +57,7 @@ var apiFunction = {
           withCredentials: true,
           success: function (res2) {
             dataRequest({
-              url: config.baseUrl + "/xcx/login",
+              url: config.baseUrl + "/login",
               method: 'GET',
               data: {
                 code: res.code,//服务器用来获取sessionKey的必要参数
@@ -78,6 +87,16 @@ var apiFunction = {
        },
       complete: function (res) { },
     });
+  },
+  secCheck:function(text){
+    api.dataRequest({
+      url: 'https://api.weixin.qq.com/wxa/msg_sec_check', //仅为示例，并非真实的接口地址
+      method: "POST",
+      data: { access_token: config.userKey, content: text },
+      success: function (response) {
+        return response;
+      }
+    })
   }
 }
 module.exports = {

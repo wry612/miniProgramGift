@@ -1,17 +1,17 @@
 <!--pages/commodity/commodity.wxml-->
 <view class='page-nav'>
-  <text class="nav-item {{current==0?'nav-active':''}}">全部</text>
-  <text class="nav-item {{current==1?'nav-active':''}}">白茶</text>
-  <text class="nav-item {{current==2?'nav-active':''}}">白酒</text>
-  <text class="nav-item {{current==3?'nav-active':''}}">普洱茶</text>
+  <text class="nav-item {{current==0?'nav-active':''}}" bindtap='getCommodity' data-type-id="0" data-current-id="-1">全部</text>
+  <text class="nav-item {{current==(index+1)?'nav-active':''}}" wx:for="{{typeList}}" bindtap='getCommodity' data-type-id="{{item.commodityTypeId}}" data-current-id="{{index}}">{{item.name}}</text>
 </view>
 <view class='section-list'>
-  <navigator url='../commodityDetail/commodityDetail' class='section-box' wx:for="{{commodityList}}" wx:for-item="commodity">
-    <view class='box-img'></view>
-    <view class='box-title'>{{commodity.name}}</view>
-    <view class='box-desc'>
-      <text class='number'>{{commodity.number}}</text>
-      <text class='money'>{{commodity.money}}</text>
-    </view>
-  </navigator>
+  <navigator url='../commodityDetail/commodityDetail?commodityContractId={{commodity.commodityContractId}}' class='section-box' wx:for="{{commodityList}}" wx:for-item="commodity" wx:for-index="idx">
+      <view class='box-img'>
+      <image src='https://gifttest.jsdttec.com/main/static/images/view/{{commodity.iconUrl}}'></image>
+      </view>
+      <view class='box-title'>{{commodity.commodityName}}</view>
+      <view class='box-desc'>
+        <text class='number'>{{(commodity.standardPrice/100)}}/{{commodity.standardUnitName}}</text>
+        <text class='money'>{{(commodity.unitPrice/100)}}/{{commodity.unit}}</text>
+      </view>
+    </navigator>
 </view>

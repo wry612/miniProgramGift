@@ -1,89 +1,65 @@
 <!--pages/commodityDetail/commodityDetail.wxml-->
 <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-  <block wx:for="{{background}}" wx:key="*this">
+  <block  wx:for="{{imgList}}">
     <swiper-item>
       <view class="swiper-item {{item}}">
         <navigator url=''>
-          <image src=''></image>
+          <image src='{{item.src}}' style='width:100%;'></image>
         </navigator>
       </view>
     </swiper-item>
   </block>
 </swiper>
 <view class='desc-wrap'>
-  <view class='desc-title'>小管理差</view>
-  <view class="description">精选自普洱核心产区，品质上乘精选自普洱核心产区，品质上乘精选自普洱核心产区，品质上乘</view>
+  <view class='desc-title'>[{{commodity.typeName}}]{{commodity.commodityName}}</view>
+  <view class="description">{{commodity.desc}}</view>
   <view class='desc-value'>
-    <text class='value-left'>￥1.4元/克</text>
-    <text class='value-right'>499.8/饼</text>
+    <text class='value-left'>￥{{commodity.standardPrice}}/{{commodity.standardUnitName}}</text>
+    <text class='value-right'>￥{{commodity.unitPrice}}/{{commodity.unit}}</text>
   </view>
 </view>
 <view class='detail-wrap'>
   <view class='detail-title'>商品详情</view>
-  <view class='detail-item'>
-    <text class='detail-key'>商品名</text>
-    <text class='detail-value'>中茶XX树普洱茶</text>
-  </view>
-  <view class='detail-item'>
-    <text class='detail-key'>商品名</text>
-    <text class='detail-value'>中茶XX树普洱茶</text>
-  </view>
-  <view class='detail-item'>
-    <text class='detail-key'>商品名</text>
-    <text class='detail-value'>中茶XX树普洱茶</text>
-  </view>
-  <view class='detail-item'>
-    <text class='detail-key'>商品名</text>
-    <text class='detail-value'>中茶XX树普洱茶</text>
-  </view>
-  <view class='detail-item'>
-    <text class='detail-key'>商品名</text>
-    <text class='detail-value'>中茶XX树普洱茶</text>
-  </view>
-  <view class='detail-item'>
-    <text class='detail-key'>商品名</text>
-    <text class='detail-value'>中茶XX树普洱茶</text>
+  <view class='detail-item' wx:for="{{properties}}">
+    <text class='detail-key'>{{item.key}}</text>
+    <text class='detail-value'>{{item.value}}</text>
   </view>
 </view>
 <view class='img-wrap'>
-  <image src='http://192.168.7.6:8080/static/xccImage/packet-floor.png' class='detail-img'></image>
-  <image src='http://192.168.7.6:8080/static/xccImage/packet-floor.png' class='detail-img'></image>
-  <image src='http://192.168.7.6:8080/static/xccImage/packet-floor.png' class='detail-img'></image>
-  <image src='http://192.168.7.6:8080/static/xccImage/packet-floor.png' class='detail-img'></image>
-  <image src='http://192.168.7.6:8080/static/xccImage/packet-floor.png' class='detail-img'></image>
+  <image src='{{item.src}}' class='detail-img' wx:for="{{commodity.imgList}}"></image>
 </view>
-<view class='fixed-bottom'>
+<view class='fixed-bottom' bindtap='showBuy'>
   <image src='http://192.168.7.6:8080/static/xccImage/icon-market.png' style='width:34rpx;height:31rpx;margin-right:10rpx;'></image>
-  <text class='buy' bindtap='showBuy'>立即购买</text>
+  <text class='buy'>立即购买</text>
 </view>
 <view class="page-cover {{buyShow?'show':''}}" bindtap='hideBuy'>
   <view class='buy-wrap'>
     <view class='buy-desc'>
-      <image src='http://192.168.7.6:8080/static/xccImage/packet-floor.png' style='width:120rpx;height:120rpx;margin-right:20rpx;'></image>
+      <image src='{{commodity.headImg}}' style='width:120rpx;height:120rpx;margin-right:20rpx;'></image>
       <view>
-        <view class='desc-name'>小罐礼茶</view>
+        <view class='desc-name'>{{commodity.commodityName}}</view>
         <view class='desc-number'>已选择：
-          <text class='number'>1克</text>(50克/罐) </view>
+          <text class='number'>{{inputNumber}}{{chooseUnit}}</text>({{commodity.standardUnitMultiple}}{{commodity.unit}}/{{commodity.standardUnitName}}) </view>
       </view>
     </view>
     <view class='buy-title'>
       规格
     </view>
     <view class='standard-box'>
-      <view class='standard-item active'>克</view>
-      <view class='standard-item'>罐</view>
+      <view class='standard-item {{standardIndex==0?"active":""}}' bindtap='changeStandard' data-index="0">{{commodity.unit}}</view>
+      <view class='standard-item {{standardIndex==1?"active":""}}' bindtap='changeStandard' data-index="1">{{commodity.standardUnitName}}</view>
     </view>
     <view class='buy-title'>数量</view>
     <view class='input-box'>
-      <view class='minus'>-</view>
-      <input type='number' class='input-number' placeholder='1'></input>
-      <view class='add'>+</view>
-      <text class='current-stock'>当前库存(2200克)</text>
+      <view class='minus' bindtap='minus'>-</view>
+      <input type='number' class='input-number' bindinput="inputNumber" placeholder='1'></input>
+      <view class='add' bindtap='add'>+</view>
+      <text class='current-stock'>当前库存({{stock()}}{{chooseUnit}})</text>
     </view>
     <view class='buy-bottom'>
       <view>
         <text class='total-title'>总价</text>
-        <text class='total-value'>1.4元</text>
+        <text class='total-value'>{{totalMoney()}}元</text>
       </view>
       <view class='btn-buy' catchtap='showOrder'>立即购买</view>
     </view>
@@ -93,21 +69,21 @@
   <view class='dialog-wrap'>
     <view class='dialog-header'>
       <text>订单金额</text>
-      <text>7元</text>
+      <text>{{totalMoney()}}元</text>
     </view>
     <view class='dialog-body'>
       <view class='body-tip'>确认参加后，将扣除李宝账户中抵扣的35毫升洋河蓝色经典</view>
       <view class='body-item'>
         <text>洋河蓝色经典</text>
-        <text>5毫升</text>
+        <text>{{inputNumber}}{{chooseUnit}}</text>
       </view>
       <view class='body-item'>
         <text>单价</text>
-        <text>1.4元/毫升</text>
+        <text>{{chooseUnitNumber}}元/{{chooseUnit}}</text>
       </view>
       <view class='body-item'>
         <text>总价</text>
-        <text>7元</text>
+        <text>{{totalMoney()}}元</text>
       </view>
     </view>
     <view class='dialog-footer'>

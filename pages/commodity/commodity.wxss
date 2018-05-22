@@ -19,7 +19,7 @@ text{
 }
 .nav-item{
   display: inline-block;
-  width: 120rpx;
+  padding:0 10rpx;
   height:82rpx;
   margin:0 30rpx;
   line-height: 82rpx;
@@ -48,6 +48,10 @@ text{
   width: 100%;
   height: 254rpx;
   background: #ccc;
+}
+.box-img image{
+   width: 100%;
+   height: 254rpx;
 }
 .box-title{
   font-size:11pt;  

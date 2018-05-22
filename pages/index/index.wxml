@@ -1,31 +1,32 @@
 <!--index.wxml-->
 <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-  <block wx:for="{{background}}" wx:key="*this">
-    <swiper-item>
-      <view class="swiper-item {{item}}">
-      <navigator url='../activity/activity'>
-      <image src=''></image>
+    <swiper-item wx:for="{{advList}}">
+      <view class="swiper-item">
+      <navigator url='../activity/activity?advertisementId={{item.advertisementId}}'>
+      <image src='https://gifttest.jsdttec.com/main/static/images/advert/{{item.icon}}' style='width:100%;;'></image>
       </navigator>
       </view>
     </swiper-item>
-  </block>
 </swiper>
 <view class='activity-title'>
-  <navigator url=''>查看所有活动</navigator>
+  <navigator url='../activityList/activityList'>查看所有活动</navigator>
 </view>
 <view class='section-wrap' wx:for="{{typeList}}">
   <view class='section-title'>
-    <text>{{item.typeName}}</text>
+    <text>{{item.type.name}}</text>
     <navigator url='../commodity/commodity' class='section-more'>查看全部</navigator>
   </view>
   <view class='section-list'>
-    <navigator url='../commodityDetail/commodityDetail' class='section-box' wx:for="{{item.commodityList}}" wx:for-item="commodity">
-      <view class='box-img'></view>
-      <view class='box-title'>{{commodity.name}}</view>
+    <navigator url='../commodityDetail/commodityDetail?commodityContractId={{commodity.commodityContractId}}' class='section-box' wx:for="{{item.commodityList}}" wx:for-item="commodity" wx:for-index="idx">
+      <view class='box-img'>
+      <image src='https://gifttest.jsdttec.com/main/static/images/view/{{commodity.iconUrl}}'></image>
+      </view>
+      <view class='box-title'>{{commodity.commodityName}}</view>
       <view class='box-desc'>
-        <text class='number'>{{commodity.number}}</text>
-        <text class='money'>{{commodity.money}}</text>
+        <text class='number'>{{(commodity.standardPrice/100)}}/{{commodity.standardUnitName}}</text>
+        <text class='money'>{{(commodity.unitPrice/100)}}/{{commodity.unit}}</text>
       </view>
     </navigator>
   </view>
 </view>
+<button open-type='getUserInfo' size='mini' type='primary' style='position:fixed;left:0;top:0;z-index:10;'>授权</button>
